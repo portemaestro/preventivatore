@@ -1,0 +1,14 @@
+node_modules/
+.env
+*.log
+npm-debug.log*
+
+# PDF preventivi esistenti (troppo grandi per git)
+Nuova cartella/
+
+# Listino PDF originale
+Listino 2025.pdf
+
+# OS
+Thumbs.db
+.DS_Store

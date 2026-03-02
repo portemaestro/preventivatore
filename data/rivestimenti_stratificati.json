@@ -1,0 +1,22 @@
+{
+    "nota": "Rivestimenti stratificati per esterni - adatti per l'utilizzo in ambiente esterno. Disponibili solo lisci - sfinestrature, coprifili e imbotti non disponibili",
+    "prezzi": {
+        "fino_105x220": 380.00,
+        "da_105_1x220_1_fino_130x280": 580.00
+    },
+    "colori": [
+        { "codice": "B1020", "nome": "Bianco" },
+        { "codice": "B0107", "nome": "Bianco" },
+        { "codice": "B1033", "nome": "Magnolia" },
+        { "codice": "B0539", "nome": "Tortora" },
+        { "codice": "B1011", "nome": "Marrone" },
+        { "codice": "B2010", "nome": "Grigio" },
+        { "codice": "B2158", "nome": "Grigio" },
+        { "codice": "B2194", "nome": "Ciliegio" },
+        { "codice": "B1384", "nome": "Noce Scuro" },
+        { "codice": "B1385", "nome": "Rovere Medio" },
+        { "codice": "B1386", "nome": "Grigio Raffaello" },
+        { "nome": "Marrone Raffaello" },
+        { "nome": "Verde Raffaello" }
+    ]
+}

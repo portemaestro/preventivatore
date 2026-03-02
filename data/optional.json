@@ -1,0 +1,76 @@
+{
+    "optional_vari": [
+        { "codice": "SERMUL", "descrizione": "Serratura Multiservizio Doppio Cilindro", "prezzo": 340.00 },
+        { "codice": "INC001", "descrizione": "Incontro Elettrico Anta Singola", "prezzo": 170.00 },
+        { "codice": "INC002", "descrizione": "Incontro Elettrico Anta Doppia", "prezzo": 225.00 },
+        { "codice": "ATI003", "descrizione": "Apertura a Tirare", "prezzo": 180.00 },
+        { "codice": "MANPAS", "descrizione": "Doppia Maniglia Passante Interna/Esterna", "prezzo": 80.00 },
+        { "codice": "SENSAL", "descrizione": "Sensore Allarme", "prezzo": 75.00 },
+        { "codice": "KTNOX1", "descrizione": "Serratura/Deviatori/Viteria in Acciaio Inox", "prezzo": 480.00 },
+        { "codice": "KTNOX2", "descrizione": "Kit Modanature Inox", "prezzo": 400.00 },
+        { "codice": "CONCAP", "descrizione": "Controtelaio 65C con Guida Cappotto Esterno", "prezzo": 110.00 },
+        { "codice": "SERRSR", "descrizione": "Serratura a Sblocco Rapido", "prezzo": 110.00 }
+    ],
+    "kit_maniglieria": {
+        "nota": "Kit maniglia interna + pomolo esterno + limitatore",
+        "kit": [
+            { "codice": "KM0063", "descrizione": "Kit Alluminio Bronzo Satinato", "prezzo": 80.00 },
+            { "codice": "KM0062", "descrizione": "Kit Alluminio Cromo Satinato", "prezzo": 70.00 },
+            { "codice": "KM0060", "descrizione": "Kit Ottone Lucido", "prezzo": 90.00 },
+            { "codice": "KIMQU2", "descrizione": "Maniglia Serie Quadra Alluminio Cromo Satinato", "prezzo": 90.00 },
+            { "codice": "KIPQU2", "descrizione": "Pomolo Serie Quadra Alluminio Cromo Satinato", "prezzo": 110.00 },
+            { "codice": "KIMQU4", "descrizione": "Maniglia Serie Quadra Alluminio Nero Satinato", "prezzo": 140.00 },
+            { "codice": "KIPQU4", "descrizione": "Pomolo Serie Quadra Alluminio Nero Satinato", "prezzo": 180.00 },
+            { "codice": "KIMQL2", "descrizione": "Maniglia Serie Quadra Ottone Cromo Lucido", "prezzo": null },
+            { "codice": "KIPQL2", "descrizione": "Pomolo Serie Quadra Ottone Cromo Lucido", "prezzo": null }
+        ],
+        "standard": "Alluminio Cromo Satinato (incluso nel blindato)"
+    },
+    "limitatore_apertura": {
+        "standard": "Cromo Satinato (incluso nel blindato)",
+        "opzioni": [
+            { "codice": "LA0063", "descrizione": "Bronzo Satinato", "prezzo": "standard" },
+            { "codice": "LA0062", "descrizione": "Cromo Satinato", "prezzo": "standard" },
+            { "codice": "LA0060", "descrizione": "Ottone Lucido", "prezzo": 80.00 },
+            { "codice": "LAQUA2", "descrizione": "Serie Quadra Cromo Satinato", "prezzo": 60.00 },
+            { "codice": "LAQUL2", "descrizione": "Serie Quadra Nero Satinato", "prezzo": 90.00 },
+            { "codice": "LAQUA4", "descrizione": "Serie Quadra Cromo Lucido", "prezzo": 120.00 }
+        ]
+    },
+    "pomolo_uovo_girevole": {
+        "nota": "Pomolo a uovo girevole lato esterno",
+        "opzioni": [
+            { "codice": "POGI63", "descrizione": "Bronzo Satinato", "prezzo": 90.00 },
+            { "codice": "POGI62", "descrizione": "Cromo Satinato", "prezzo": 120.00 },
+            { "codice": "POGI60", "descrizione": "Ottone Lucido", "prezzo": null }
+        ]
+    },
+    "defender": {
+        "standard": "Defender Antishock Classe 4 (DE0000) - incluso",
+        "opzioni": [
+            { "codice": "DE0000", "descrizione": "Defender Antishock Classe 4", "prezzo": "standard" },
+            { "codice": "DEQUCS", "descrizione": "Serie Quadra Cromo Satinato", "prezzo": 90.00 },
+            { "codice": "DEQUCL", "descrizione": "Serie Quadra Nero Satinato", "prezzo": 110.00 },
+            { "codice": "DEQUNS", "descrizione": "Serie Quadra Cromo Lucido", "prezzo": 120.00 },
+            { "codice": "DEFENDO", "descrizione": "Defender Meccanico Magnetico (3 chiavi)", "prezzo": 180.00 },
+            { "codice": "DEMATIK", "descrizione": "Chiave Meccanica Aggiuntiva (per DEFENDO)", "prezzo": 70.00 }
+        ]
+    },
+    "cilindro": {
+        "standard": "EVO K75 Top Securemme (5 chiavi + 1 cantiere)",
+        "supplementi_dimensioni": {
+            "nota": "Supplementi in base allo spessore rivestimenti",
+            "int_6mm_est_6_14mm": "standard",
+            "int_oltre_6mm_est_oltre_14mm": 90.00
+        },
+        "cilindro_codolo_pomolino": 90.00,
+        "impianto_masterizzazione_ka": 240.00,
+        "prezzo_ricambio_standard": 240.00,
+        "evva_mcs": {
+            "codice": "EVVA MCS",
+            "descrizione": "EVVA MCS Rotori Magnetici - 3 chiavi",
+            "prezzo": 700.00,
+            "chiave_supplementare": 210.00
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "nota": "Porte blindate con cerniere a scomparsa",
+    "modelli": [
+        {
+            "modello": "Planamuro",
+            "classe": 3,
+            "anta_principale": {
+                "misure_standard": "80/85/90 x 210",
+                "prezzo": 2920.00
+            },
+            "antina_asimmetrica": null,
+            "antina_simmetrica": null
+        },
+        {
+            "modello": "Complanare",
+            "classe": 3,
+            "anta_principale": {
+                "misure_standard": "80/85/90 x 210",
+                "prezzo": 2520.00
+            },
+            "antina_asimmetrica": {
+                "misure": "30/40 x 210",
+                "prezzo": 2400.00
+            },
+            "antina_simmetrica": {
+                "misure": "80/85/90 x 210",
+                "prezzo": null
+            }
+        },
+        {
+            "modello": "Moving",
+            "classe": 3,
+            "anta_principale": {
+                "misure_standard": "80/85/90 x 210",
+                "prezzo": 1770.00
+            },
+            "antina_asimmetrica": {
+                "misure": "30/40 x 210",
+                "prezzo": 1660.00
+            },
+            "antina_simmetrica": {
+                "misure": "80/85/90 x 210",
+                "prezzo": null
+            }
+        }
+    ],
+    "supplemento_rotox_classe_4": {
+        "nota": "Supplemento per upgrade a classe 4 (disponibile per Moving)",
+        "prezzo": 730.00
+    }
+}

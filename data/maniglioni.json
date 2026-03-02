@@ -1,0 +1,152 @@
+{
+    "hoppe": {
+        "nota": "Maniglioni serie Hoppe",
+        "modelli": {
+            "E5091_dallas": {
+                "nome": "Dallas",
+                "finiture": {
+                    "cromo_satinato": [
+                        { "lunghezza": 800, "interasse": 560, "prezzo": 420.00 },
+                        { "lunghezza": 1000, "interasse": 700, "prezzo": 490.00 },
+                        { "lunghezza": 1200, "interasse": 900, "prezzo": null },
+                        { "lunghezza": 1400, "interasse": 1000, "prezzo": null },
+                        { "lunghezza": 1600, "interasse": 1200, "prezzo": null },
+                        { "lunghezza": 1800, "interasse": 1300, "prezzo": null }
+                    ],
+                    "nero_satinato": [
+                        { "lunghezza": 1000, "interasse": 700, "prezzo": 810.00 },
+                        { "lunghezza": 1200, "interasse": 900, "prezzo": 980.00 }
+                    ]
+                }
+            },
+            "E5095_athinai_curvo": {
+                "nome": "Athinai Curvo",
+                "finiture": {
+                    "cromo_satinato": [
+                        { "lunghezza": 1000, "interasse": 700, "prezzo": 430.00 },
+                        { "lunghezza": 1200, "interasse": 900, "prezzo": 470.00 },
+                        { "lunghezza": 1400, "interasse": 1000, "prezzo": null },
+                        { "lunghezza": 1600, "interasse": 1200, "prezzo": null }
+                    ],
+                    "nero_satinato": [
+                        { "lunghezza": 1000, "interasse": 700, "prezzo": 870.00 },
+                        { "lunghezza": 1200, "interasse": 900, "prezzo": 950.00 }
+                    ]
+                }
+            },
+            "E5011_athinai_dritto": {
+                "nome": "Athinai Dritto",
+                "finiture": {
+                    "cromo_satinato": [
+                        { "lunghezza": 400, "interasse": 300, "prezzo": 230.00 },
+                        { "lunghezza": 500, "interasse": 300, "prezzo": 260.00 },
+                        { "lunghezza": 600, "interasse": 300, "prezzo": 300.00 },
+                        { "lunghezza": 800, "interasse": 560, "prezzo": null },
+                        { "lunghezza": 1000, "interasse": 700, "prezzo": null },
+                        { "lunghezza": 1200, "interasse": 900, "prezzo": null },
+                        { "lunghezza": 1400, "interasse": 1000, "prezzo": null },
+                        { "lunghezza": 1600, "interasse": 1200, "prezzo": null },
+                        { "lunghezza": 1800, "interasse": 1300, "prezzo": null }
+                    ]
+                }
+            },
+            "E5511": {
+                "nome": "E5511",
+                "finiture": {
+                    "cromo_satinato": [
+                        { "lunghezza": 350, "interasse": 210, "prezzo": 350.00 },
+                        { "lunghezza": 600, "interasse": 485, "prezzo": 400.00 },
+                        { "lunghezza": 800, "interasse": 695, "prezzo": 550.00 },
+                        { "lunghezza": 1200, "interasse": 1000, "prezzo": null },
+                        { "lunghezza": 1600, "interasse": 1400, "prezzo": null },
+                        { "lunghezza": 2000, "interasse": 1800, "prezzo": null }
+                    ]
+                }
+            },
+            "E5726": {
+                "nome": "E5726 (dritto)",
+                "finiture": {
+                    "cromo_satinato": [
+                        { "lunghezza": 400, "interasse": 300, "prezzo": null },
+                        { "lunghezza": 500, "interasse": 300, "prezzo": 280.00 },
+                        { "lunghezza": 600, "interasse": 300, "prezzo": null },
+                        { "lunghezza": 800, "interasse": 560, "prezzo": null },
+                        { "lunghezza": 1000, "interasse": 700, "prezzo": 320.00 },
+                        { "lunghezza": 1200, "interasse": 900, "prezzo": null },
+                        { "lunghezza": 1400, "interasse": 1000, "prezzo": null },
+                        { "lunghezza": 1600, "interasse": 1200, "prezzo": 360.00 },
+                        { "lunghezza": 1800, "interasse": 1300, "prezzo": null }
+                    ],
+                    "nero_satinato": [
+                        { "lunghezza": 500, "interasse": 300, "prezzo": 450.00 },
+                        { "lunghezza": 1000, "interasse": 700, "prezzo": 530.00 },
+                        { "lunghezza": 1600, "interasse": 1200, "prezzo": 610.00 }
+                    ]
+                }
+            }
+        },
+        "prezzi_singoli_riferimento": {
+            "nota": "Prezzi di riferimento per i modelli combinati",
+            "athinai_curvo": 440.00,
+            "athinai_dritto": 440.00,
+            "dallas": 330.00
+        }
+    },
+    "aluform": {
+        "nota": "Maniglioni serie Aluform",
+        "serie_A95x": {
+            "modelli": [
+                { "altezza": 400, "codice_base": "A 951", "effetto_inox": 330.00, "ral_3003": null, "ral_9005": null, "colore_richiesta": null, "R": 460.00, "N": 460.00, "C": 460.00 },
+                { "altezza": 700, "codice_base": "A 952", "effetto_inox": 390.00, "ral_3003": null, "ral_9005": null, "colore_richiesta": null, "R": 530.00, "N": 530.00, "C": 530.00 },
+                { "altezza": 1000, "codice_base": "A 953", "effetto_inox": 460.00, "ral_3003": null, "ral_9005": null, "colore_richiesta": null, "R": 610.00, "N": 610.00, "C": 610.00 },
+                { "altezza": 1700, "codice_base": "A 955", "effetto_inox": 580.00, "ral_3003": null, "ral_9005": null, "colore_richiesta": null, "R": 800.00, "N": 800.00, "C": 800.00 }
+            ]
+        },
+        "serie_A96x": {
+            "modelli": [
+                { "altezza": 400, "codice_base": "A 961", "effetto_inox": 350.00, "ral_3003": null, "ral_9005": null, "colore_richiesta": null, "R": 490.00, "N": 490.00, "C": 490.00 },
+                { "altezza": 700, "codice_base": "A 962", "effetto_inox": 410.00, "ral_3003": null, "ral_9005": null, "colore_richiesta": null, "R": 560.00, "N": 560.00, "C": 560.00 },
+                { "altezza": 1000, "codice_base": "A 963", "effetto_inox": 470.00, "ral_3003": null, "ral_9005": null, "colore_richiesta": null, "R": 650.00, "N": 650.00, "C": 650.00 }
+            ]
+        },
+        "serie_A97x": {
+            "modelli": [
+                { "altezza": 400, "codice_base": "A 971", "effetto_inox": 310.00, "ral_3003": null, "ral_9005": null, "colore_richiesta": null, "R": 450.00, "N": 450.00, "C": 450.00 },
+                { "altezza": 700, "codice_base": "A 972", "effetto_inox": 410.00, "ral_3003": null, "ral_9005": null, "colore_richiesta": null, "R": 560.00, "N": 560.00, "C": 560.00 },
+                { "altezza": 1000, "codice_base": "A 973", "effetto_inox": 520.00, "ral_3003": null, "ral_9005": null, "colore_richiesta": null, "R": 690.00, "N": 690.00, "C": 690.00 }
+            ]
+        },
+        "serie_A94x": {
+            "nota": "Prezzi dettagliati per finiture speciali",
+            "modelli": [
+                { "codice": "A 941", "effetto_inox": 590.00, "ral_3003": 670.00, "ral_9005": 670.00, "colore_richiesta": 770.00 },
+                { "codice": "A 942", "effetto_inox": 590.00, "ral_3003": 670.00, "ral_9005": 670.00, "colore_richiesta": 770.00 },
+                { "codice": "A 943", "effetto_inox": 590.00, "ral_3003": 670.00, "ral_9005": 670.00, "colore_richiesta": 770.00 },
+                { "codice": "A 944", "effetto_inox": 480.00, "ral_3003": 570.00, "ral_9005": 570.00, "colore_richiesta": 680.00 },
+                { "codice": "A 945", "effetto_inox": 310.00, "ral_3003": 400.00, "ral_9005": 400.00, "colore_richiesta": 490.00 },
+                { "codice": "A 946", "effetto_inox": 290.00, "ral_3003": 400.00, "ral_9005": 400.00, "colore_richiesta": 490.00 }
+            ]
+        },
+        "serie_A90x_battenti": {
+            "nota": "Maniglioni battenti (cerniere)",
+            "modelli": [
+                { "codice": "A 902 DX", "effetto_inox": 180.00, "ral_3003": 285.00, "ral_9005": 285.00, "corten": 285.00, "colore_richiesta": 365.00 },
+                { "codice": "A 903 SX", "effetto_inox": 180.00, "ral_3003": 285.00, "ral_9005": 285.00, "corten": 285.00, "colore_richiesta": 365.00 }
+            ],
+            "finiture_battenti": [
+                { "finitura": "Ottone Bronzato", "prezzo": 360.00 },
+                { "finitura": "Ottone Cromo Satinato", "prezzo": 360.00 },
+                { "finitura": "Ottone Oro PVD", "prezzo": 450.00 }
+            ]
+        }
+    },
+    "kit_illuminazione_led": {
+        "modelli": [
+            { "codice": "LD 040", "altezza": 400, "prezzo": 250.00 },
+            { "codice": "LD 070", "altezza": 700, "prezzo": 270.00 },
+            { "codice": "LD100", "altezza": 1000, "prezzo": 290.00 },
+            { "codice": "LD170", "altezza": 1700, "prezzo": 380.00 }
+        ],
+        "componenti": ["Striscia LED", "Cavo alimentazione", "Trasformatore"]
+    }
+}

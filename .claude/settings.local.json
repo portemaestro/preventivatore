@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Edit",
+      "Write",
+      "Read",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+      "Bash(cd:*)",
+      "Bash(sleep 3:*)",
+      "Bash(curl:*)",
+      "Bash(echo TOKEN: ${TOKEN:0:20}...:*)"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+    "aluform": {
+        "nota": "Listino analitico catalogo rivestimenti Alluminio Aluform. Prezzi riferiti fino alla misura 90x210",
+        "supplemento_fuori_standard_max_110x250": 290.00,
+        "modelli": [
+            { "pagina": 92, "modello": "ADRAR/H", "prezzo": 1870.00, "maniglione": "A972 RAL 5003 + KIT LED", "prezzo_maniglione": 840.00 },
+            { "pagina": 93, "modello": "ADRAR/MH", "prezzo": 2000.00 },
+            { "pagina": 94, "modello": "ATACAMA/H", "prezzo": 1870.00, "maniglione": "A 942 RAL 8014", "prezzo_maniglione": 770.00 },
+            { "pagina": 95, "modello": "ATACAMA/MH", "prezzo": 2000.00, "maniglione": "A 963 N", "prezzo_maniglione": 650.00 },
+            { "pagina": 96, "modello": "GIBSON/H", "prezzo": 1870.00, "maniglione": "A 963 N", "prezzo_maniglione": 650.00 },
+            { "modello": "GIBSON/MH", "prezzo": 2000.00, "maniglione": "A 943 N", "prezzo_maniglione": 650.00 },
+            { "modello": "GOBI/MH", "prezzo": 2000.00, "maniglione": "A 941R", "prezzo_maniglione": 650.00 },
+            { "modello": "KALAHARI/H", "prezzo": 2000.00, "maniglione": "A 942", "prezzo_maniglione": 590.00 },
+            { "modello": "KALAHARI/MDH", "prezzo": 2350.00, "maniglione": "A 945", "prezzo_maniglione": 310.00 },
+            { "modello": "MOJAVE/F", "prezzo": 2350.00, "maniglione": "A 946 R", "prezzo_maniglione": 400.00 },
+            { "modello": "MOJAVE/FM", "prezzo": 2520.00, "maniglione": "A 961 N", "prezzo_maniglione": 490.00 },
+            { "modello": "SAHARA/H", "prezzo": 1560.00, "maniglione": "A 951 N", "prezzo_maniglione": 490.00 },
+            { "modello": "SAHARA/H", "prezzo": 1560.00, "maniglione": "A 951 N", "prezzo_maniglione": 490.00 },
+            { "modello": "SONORA/MFD", "prezzo": 2520.00, "maniglione": "A 955 N + KIT LED", "prezzo_maniglione": 1180.00 },
+            { "modello": "TENERE'/H", "prezzo": 1870.00, "maniglione": "A 703", "prezzo_maniglione": 650.00 },
+            { "modello": "TENERE'/MH", "prezzo": 2000.00, "maniglione": "A 703", "prezzo_maniglione": 490.00 },
+            { "modello": "ZAFFIRO/HB", "prezzo": 1250.00, "maniglione": null, "prezzo_maniglione": 490.00 },
+            { "modello": "ZAFFIRO/MH", "prezzo": 1870.00, "maniglione": "A 961 Corten", "prezzo_maniglione": 650.00 },
+            { "modello": "ZAFFIRO/FC", "prezzo": 1560.00, "maniglione": "A 961 Corten", "prezzo_maniglione": 800.00 },
+            { "modello": "ZAFFIRO/FB", "prezzo": 1560.00, "maniglione": null, "prezzo_maniglione": 310.00 },
+            { "modello": "ZAFFIRO/HE", "prezzo": 1870.00, "maniglione": "A 942 R", "prezzo_maniglione": 590.00 },
+            { "modello": "AMBRA/FF", "prezzo": 1870.00, "maniglione": "A 955 R", "prezzo_maniglione": 650.00 },
+            { "modello": "AMBRA/MF", "prezzo": 1870.00, "maniglione": "A 945", "prezzo_maniglione": 410.00 },
+            { "modello": "AMBRA/HF", "prezzo": 1250.00, "maniglione": "A 942", "prezzo_maniglione": 590.00 },
+            { "modello": "QUARZO/MFD", "prezzo": 2000.00, "maniglione": "A 963 Corten", "prezzo_maniglione": 650.00 },
+            { "modello": "QUARZO/FE", "prezzo": 1560.00, "maniglione": "A 962", "prezzo_maniglione": 390.00 },
+            { "modello": "KREO/HA", "prezzo": 1560.00, "maniglione": "A 942", "prezzo_maniglione": 410.00 },
+            { "modello": "KREO/FA", "prezzo": 1870.00, "maniglione": "A 962 Corten", "prezzo_maniglione": 800.00 },
+            { "modello": "CORALLO/MF", "prezzo": 2350.00, "maniglione": "A 952", "prezzo_maniglione": 590.00 },
+            { "modello": "GIADA/H", "prezzo": 1250.00, "maniglione": "A 962", "prezzo_maniglione": 490.00 },
+            { "modello": "AMETISTA/HB", "prezzo": 1250.00, "maniglione": "A 962 RAL 8019", "prezzo_maniglione": 590.00 },
+            { "modello": "AMETISTA/FB", "prezzo": 1560.00, "maniglione": "A 942", "prezzo_maniglione": 650.00 },
+            { "modello": "RIGO/HC", "prezzo": 1250.00, "maniglione": "A 961 N", "prezzo_maniglione": 590.00 },
+            { "modello": "RIGO/HF", "prezzo": 1250.00, "maniglione": "A 942", "prezzo_maniglione": 680.00 },
+            { "modello": "RIGO/HH", "prezzo": 1250.00, "maniglione": "A 963 N", "prezzo_maniglione": 680.00 },
+            { "modello": "RIGO/HE", "prezzo": 1250.00, "maniglione": "A 955", "prezzo_maniglione": 590.00 },
+            { "modello": "DIAMOND/MHD", "prezzo": 1870.00, "maniglione": "A 944 RAL 6021", "prezzo_maniglione": 770.00 },
+            { "modello": "DIAMOND/MH", "prezzo": 1870.00, "maniglione": "A 961 RAL 3005", "prezzo_maniglione": 570.00 },
+            { "modello": "RUBINO/HG", "prezzo": 1250.00, "maniglione": "A 941", "prezzo_maniglione": 770.00 },
+            { "modello": "SMERALDO/H", "prezzo": 1250.00, "maniglione": "A 943 RAL 7032", "prezzo_maniglione": 490.00 }
+        ]
+    },
+    "europa": {
+        "nota": "Rivestimenti alluminio linea Europa - adatti per utilizzo in ambiente esterno",
+        "colori_standard": {
+            "elenco": [
+                "RAL 1013 Semilucido",
+                "RAL 6005 Opaco",
+                "RAL 8017 Opaco",
+                "RAL 9010 Opaco e Lucido",
+                "RAL 6005 Grinz",
+                "RAL 8017 Grinz",
+                "Grigio Gotico",
+                "Verde Gotico",
+                "Marrone Gotico"
+            ],
+            "anta": 830.00,
+            "antina": 630.00
+        },
+        "colori_optional": {
+            "anta": 1100.00,
+            "antina": 850.00
+        },
+        "finiture_kromoss_viv_decoral": {
+            "anta": 1250.00,
+            "antina": 980.00
+        },
+        "maggiorazioni_fuori_standard": {
+            "fino_91_3x210_3": 0,
+            "da_91_4x210_4_a_110x228": "45%",
+            "da_110_1x228_1_a_118x245": "45% + 30%",
+            "rivestimento_ad_arco": "50%"
+        },
+        "supplementi_insert": [
+            { "modello": "INSERT 01", "supplemento": 525.00 },
+            { "modello": "INSERT 02", "supplemento": 825.00 },
+            { "modello": "INSERT 03", "supplemento": 785.00 },
+            { "modello": "INSERT 04", "supplemento": 675.00 },
+            { "modello": "INSERT 05", "supplemento": 500.00 },
+            { "modello": "INSERT 06", "supplemento": 750.00 },
+            { "modello": "INSERT 07", "supplemento": 450.00 },
+            { "modello": "INSERT 08", "supplemento": 825.00 },
+            { "modello": "INSERT 09", "supplemento": 120.00 },
+            { "modello": "INSERT 10", "supplemento": 525.00 },
+            { "modello": "INSERT 11", "supplemento": 450.00 },
+            { "modello": "INSERT 12", "supplemento": 525.00 },
+            { "modello": "INSERT 13", "supplemento": 675.00 },
+            { "modello": "INSERT 14", "supplemento": 675.00 },
+            { "modello": "INSERT CARINA", "supplemento": 750.00 }
+        ],
+        "sfinestrature": {
+            "cornice_dritta_piatta": 630.00,
+            "cornice_dritta_barocca": 630.00,
+            "cornice_curva_barocca": 780.00,
+            "nota": "Prezzo relativo a 1 sfinestratura"
+        }
+    }
+}

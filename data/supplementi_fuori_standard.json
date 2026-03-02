@@ -1,0 +1,79 @@
+{
+    "supplementi_dimensioni": {
+        "nota": "Supplementi basati su larghezza e altezza luce passaggio. Per blindati a cerniere a vista",
+        "tabella": [
+            {
+                "larghezza": "fino_a_105",
+                "altezza_fino_190": 520.00,
+                "altezza_190_5_a_240": 290.00,
+                "altezza_240_5_a_250": 500.00,
+                "altezza_250_5_a_290": 900.00
+            },
+            {
+                "larghezza": "da_105_5_a_110",
+                "altezza_fino_190": 750.00,
+                "altezza_190_5_a_240": 500.00,
+                "altezza_240_5_a_250": 600.00,
+                "altezza_250_5_a_290": 1000.00
+            },
+            {
+                "larghezza": "da_110_5_a_120",
+                "altezza_fino_190": 1150.00,
+                "altezza_190_5_a_240": 900.00,
+                "altezza_240_5_a_250": 1000.00,
+                "altezza_250_5_a_290": 1800.00
+            }
+        ],
+        "nota_laminati": "I rivestimenti laminati sono disponibili fino alla misura luce passaggio porta cm 240. Oltre tale misura occorre utilizzare pannelli in Okoumè o MDF 12mm"
+    },
+    "supplemento_montaggio_rivestimento_cliente": {
+        "1_anta_1_lato": 80.00,
+        "2_ante_1_lato": 120.00
+    },
+    "kit_coibentazione_termica": {
+        "nota": "Kit coibentazione termica certificata per detrazione fiscale",
+        "kit": [
+            { "codice": "KT001", "descrizione": "1 anta", "trasmittanza": "1.0", "prezzo": 180.00 },
+            { "codice": "KT002", "descrizione": "2 ante", "trasmittanza": "1.1", "prezzo": 260.00 },
+            { "codice": "KT003", "descrizione": "1 anta + sopraluce", "trasmittanza": "1.1", "prezzo": 375.00 },
+            { "codice": "KT004", "descrizione": "2 ante + sopraluce", "trasmittanza": "1.2", "prezzo": 435.00 },
+            { "codice": "KT005", "descrizione": "1 anta sfinestrata", "trasmittanza": "1.3", "prezzo": 400.00 },
+            { "codice": "KT006", "descrizione": "1 anta sfinestrata + sopraluce", "trasmittanza": "1.3", "prezzo": 600.00 },
+            { "codice": "KT007", "descrizione": "2 ante (1 anta cieca + 1 anta sfinestrata)", "trasmittanza": "1.2", "prezzo": 460.00 },
+            { "codice": "KT008", "descrizione": "2 ante (1 anta cieca + 1 anta sfinestrata) + sopraluce", "trasmittanza": "1.3", "prezzo": 720.00 },
+            { "codice": "KT009", "descrizione": "2 ante (anta sfinestrata + antina sfinestrata)", "trasmittanza": "1.3", "prezzo": 560.00 },
+            { "codice": "KT010", "descrizione": "1 anta + 1 fiancoluce", "trasmittanza": "1.2", "prezzo": 660.00 },
+            { "codice": "KT011", "descrizione": "1 anta + 2 fiancoluce", "trasmittanza": "1.3", "prezzo": 1060.00 },
+            { "codice": "KT012", "descrizione": "2 ante + 1 fiancoluce", "trasmittanza": "1.2", "prezzo": 720.00 },
+            { "codice": "KT013", "descrizione": "2 ante + 2 fiancoluce", "trasmittanza": "1.3", "prezzo": 1120.00 },
+            { "codice": "KT019", "descrizione": "1 anta + 1 fiancoluce + sopraluce", "trasmittanza": "1.3", "prezzo": 810.00 },
+            { "codice": "KT020", "descrizione": "1 anta + 2 fiancoluce + sopraluce", "trasmittanza": "1.3", "prezzo": 1250.00 }
+        ]
+    },
+    "kit_acustico": {
+        "nota": "Kit acustico con abbattimento certificato",
+        "kit": [
+            {
+                "codice": "KA143",
+                "descrizione": "1 anta (con kit termico 1.0 compreso)",
+                "requisiti": "Necessaria soglia Slim e rivestimenti in laminato 6mm",
+                "abbattimento_db": 43.8,
+                "prezzo": 360.00
+            },
+            {
+                "codice": "KA146",
+                "descrizione": "1 anta (con kit termico 1.0 compreso)",
+                "requisiti": "Necessaria soglia Slim e rivestimenti in laminato 6mm",
+                "abbattimento_db": 46.5,
+                "prezzo": 420.00
+            },
+            {
+                "codice": "KA238",
+                "descrizione": "2 ante (con kit termico 1.1 compreso)",
+                "requisiti": "Necessaria battuta a pavimento e rivestimento Okoumè",
+                "abbattimento_db": 38.2,
+                "prezzo": 520.00
+            }
+        ]
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "trasporto": {
+        "nota": "Tariffe riferite a 1 collo",
+        "tariffe": {
+            "fino_95x215": {
+                "puglia": 60.00,
+                "campania_basilicata_calabria_molise": 70.00,
+                "emilia_romagna_toscana_umbria_lazio_abruzzo_marche": 80.00,
+                "lombardia_piemonte": 90.00,
+                "veneto_sicilia_liguria": 100.00,
+                "valle_aosta_trentino_friuli_sardegna": 120.00
+            },
+            "da_95_1x215_1_a_110x225": {
+                "puglia": 90.00,
+                "campania_basilicata_calabria_molise": 100.00,
+                "emilia_romagna_toscana_umbria_lazio_abruzzo_marche": 110.00,
+                "lombardia_piemonte": 120.00,
+                "veneto_sicilia_liguria": 130.00,
+                "valle_aosta_trentino_friuli_sardegna": 150.00
+            },
+            "da_225_1_a_250": {
+                "puglia": 180.00,
+                "campania_basilicata_calabria_molise": 250.00,
+                "emilia_romagna_toscana_umbria_lazio_abruzzo_marche": 250.00,
+                "lombardia_piemonte": 360.00,
+                "veneto_sicilia_liguria": 360.00,
+                "valle_aosta_trentino_friuli_sardegna": 360.00
+            }
+        },
+        "regole": {
+            "2_ante_asimm_simm": "x2",
+            "sopraluce": "+ 1 collo",
+            "fiancoluce": "+ 1 collo",
+            "zone_difficoltose_isole_minori": "quotazione a preventivo"
+        },
+        "mezzo": ["Corriere", "Destinatario", "Mittente"]
+    },
+    "imballo": {
+        "nota": "Imballo a prova di corriere",
+        "tariffe": {
+            "anta_singola_fino_90x220": 40.00,
+            "anta_singola_oltre_90x220": 60.00,
+            "anta_doppia_altezza_fino_220": 60.00,
+            "anta_doppia_altezza_oltre_220": 80.00,
+            "supplemento_sopraluce_fiancoluce": 20.00,
+            "contributo_imballaggio_scocca": 30.00
+        }
+    },
+    "garanzia_all_risk": {
+        "nota": "Non scontabile",
+        "1_anta_misura_standard": 18.00,
+        "fuori_standard_o_2_ante": 38.00
+    }
+}

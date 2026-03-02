@@ -1,0 +1,103 @@
+{
+    "nota_supplementi": "Supplementi riferiti a 1 anta. Per anta asimmetrica: x1.5. Per anta simmetrica: x2",
+    "finitura_standard": {
+        "supplemento": 0,
+        "colori": [
+            { "codice": "T2", "nome": "Noce Chiaro" },
+            { "codice": "T4", "nome": "Noce Medio" },
+            { "codice": "T6", "nome": "Noce Scuro" },
+            { "codice": "N1", "nome": "Noce Nazionale" },
+            { "codice": "M4", "nome": "Mogano Scuro" },
+            { "codice": "M5", "nome": "Mogano Chiaro" },
+            { "codice": "NAS", "nome": "Noce Biondo" },
+            { "codice": "C1", "nome": "Ciliegio" },
+            { "codice": "R1", "nome": "Rovere Naturale" },
+            { "codice": "A10", "nome": "Avorio Opaco" },
+            { "codice": "B10", "nome": "Bianco Opaco" },
+            { "codice": "R3", "nome": "Wengè Verticale" }
+        ]
+    },
+    "finitura_optional_matrix": {
+        "supplemento_misura_standard": 60.00,
+        "supplemento_fuori_standard": 120.00,
+        "colori": [
+            { "codice": "B1M", "nome": "Bianco Matrix" },
+            { "codice": "B1F", "nome": "Frassino Poro Bianco" },
+            { "codice": "P96", "nome": "Palissandro Bianco/Avorio" },
+            { "codice": "P55", "nome": "Palissandro Grigio" },
+            { "codice": "P84", "nome": "Pino Sabbia" },
+            { "codice": "N48", "nome": "Noce Matrix" },
+            { "codice": "R06", "nome": "Rovere Sbiancato Orizzontale" },
+            { "codice": "OG1", "nome": "Olmo Grigio" },
+            { "codice": "0S2", "nome": "Olmo Sabbia" },
+            { "codice": "LS4", "nome": "Larice Sabbia" },
+            { "codice": "LG2", "nome": "Larice Grigio" },
+            { "codice": "LR3", "nome": "Larice Rosa" },
+            { "codice": "WH4", "nome": "Wengè Matrix Orizzontale" },
+            { "codice": "LA1", "nome": "Larice Avana" }
+        ]
+    },
+    "finitura_optional_long_life": {
+        "supplemento_misura_standard": 120.00,
+        "supplemento_fuori_standard": 240.00,
+        "disponibilita_venatura_orizzontale": "max 94x210",
+        "disponibilita_venatura_verticale": "max 114x245",
+        "colori": [
+            { "codice": "23100", "nome": "Milk Bianco Long Life" },
+            { "codice": "23107", "nome": "Milk Brown Long Life" },
+            { "codice": "23102", "nome": "Milk Grigio Long Life" },
+            { "codice": "23104", "nome": "Milk Nocciola Long Life" },
+            { "codice": "23106", "nome": "Milk Sabbia Long Life" },
+            { "codice": "27805", "nome": "Coffee Antracite Long Life" },
+            { "codice": "27801", "nome": "Coffee Avorio Long Life" },
+            { "codice": "27800", "nome": "Coffee Bianco Long Life" },
+            { "codice": "27804", "nome": "Coffee Brown Long Life" },
+            { "codice": "27806", "nome": "Coffee Grigio Long Life" },
+            { "codice": "27808", "nome": "Coffee Miele Long Life" }
+        ]
+    },
+    "misura_max_porta_laminati": "110x245",
+    "prezzi_ricambio": {
+        "finitura_standard_h_standard": 110.00,
+        "finitura_standard_h_fuori_misura": 160.00,
+        "finitura_optional_h_standard": 170.00,
+        "finitura_optional_h_fuori_standard": 290.00
+    },
+    "coprifili_laminati": {
+        "nota": "Kit coprifilo serie laminato - 3 pz. H.250",
+        "larghezze": [
+            { "larghezza": "8cm_standard", "prezzo": 130.00 },
+            { "larghezza": "fino_10cm", "prezzo": 395.00 },
+            { "larghezza": "da_10_1_a_15cm", "prezzo": 440.00 },
+            { "larghezza": "da_15_a_20cm", "prezzo": 480.00 }
+        ]
+    },
+    "imbotti_laminati": {
+        "nota": "Kit imbotte serie laminato - coprifilo da 8.5cm",
+        "tabella": [
+            {
+                "profondita_muro": "fino_15cm",
+                "fino_90x210": 405.00,
+                "da_90_1x210_1_a_120x238": 450.00,
+                "da_120_1x238_a_190x238": 515.00
+            },
+            {
+                "profondita_muro": "da_15_1_a_25cm",
+                "fino_90x210": 480.00,
+                "da_90_1x210_1_a_120x238": 530.00,
+                "da_120_1x238_a_190x238": 590.00
+            },
+            {
+                "profondita_muro": "da_25_1_a_40cm",
+                "fino_90x210": 580.00,
+                "da_90_1x210_1_a_120x238": 620.00,
+                "da_120_1x238_a_190x238": 685.00
+            }
+        ],
+        "supplemento_coprifilo_fuori_standard": {
+            "fino_10cm": 405.00,
+            "da_10_1_a_15cm": 440.00,
+            "da_15_1_a_20cm": 495.00
+        }
+    }
+}

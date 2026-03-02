@@ -1,0 +1,62 @@
+{
+    "telai_ridotti_ristrutturazione": {
+        "nota": "Supplemento per telaio ridotto (L o Z)",
+        "tabella": [
+            {
+                "larghezza": "fino_a_105",
+                "altezza_fino_240": 320.00,
+                "altezza_da_240_5_a_260": 420.00
+            },
+            {
+                "larghezza": "oltre_105",
+                "altezza_fino_240": 390.00,
+                "altezza_da_240_5_a_260": 490.00
+            }
+        ]
+    },
+    "telaio_ad_adattare": {
+        "nota": "Su controtelaio altre aziende",
+        "prezzi": {
+            "1_pezzo": 540.00,
+            "2_pezzi_stesso_controtelaio": 440.00,
+            "da_3_a_5_pezzi_stesso_controtelaio": 330.00,
+            "da_6_pezzi_stesso_controtelaio": 300.00
+        }
+    },
+    "verniciatura_monocolore": {
+        "nota": "Verniciatura telaio e modanature monocolore",
+        "colori": {
+            "marrone": {
+                "1_anta": 0,
+                "2_ante": 0
+            },
+            "bianco_simil_9010": {
+                "1_anta": 280.00,
+                "2_ante": 380.00
+            },
+            "tutti_i_ral": {
+                "1_anta": 550.00,
+                "2_ante": 650.00
+            }
+        },
+        "supplementi": {
+            "sopraluce": 250.00,
+            "fiancoluce": 280.00,
+            "nota": "Validi sia per monocolore che per bicolore"
+        }
+    },
+    "verniciatura_bicolore": {
+        "nota": "Verniciatura telaio e modanature bicolore (interno/esterno)",
+        "combinazioni": {
+            "int_marrone_est_marrone": { "1_anta": 0, "2_ante": 0 },
+            "int_marrone_est_bianco": { "1_anta": 280.00, "2_ante": 380.00 },
+            "int_marrone_est_ral": { "1_anta": 550.00, "2_ante": 650.00 },
+            "int_bianco_est_marrone": { "1_anta": 280.00, "2_ante": 380.00 },
+            "int_bianco_est_bianco": { "1_anta": 0, "2_ante": 0 },
+            "int_bianco_est_ral": { "1_anta": 580.00, "2_ante": 680.00 },
+            "int_ral_est_marrone": { "1_anta": 550.00, "2_ante": 650.00 },
+            "int_ral_est_bianco": { "1_anta": 580.00, "2_ante": 680.00 },
+            "int_ral_est_ral": { "1_anta": 750.00, "2_ante": 850.00 }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "sfinestrature": {
+        "nota": "Sfinestrature rettangolari + vetro blindo-camera",
+        "prezzi": {
+            "1_rettangolare": 1060.00,
+            "2_rettangolari": 1590.00,
+            "3_rettangolari": 2120.00,
+            "4_rettangolari": 2650.00
+        },
+        "detrazione_vetro_escluso": -200.00
+    },
+    "sopraluce": {
+        "nota": "Sopraluce - vetro escluso",
+        "1_anta": {
+            "altezza_fino_260": 450.00,
+            "altezza_fino_300": 510.00,
+            "oltre_300": 1280.00
+        },
+        "2_ante": {
+            "altezza_fino_260": 510.00,
+            "altezza_fino_300": 640.00,
+            "oltre_300": 1280.00
+        },
+        "supplemento_altezza_porta_diversa_210": 220.00,
+        "apertura_wasistas_dritto": 1300.00,
+        "apertura_wasistas_curvo": 2400.00,
+        "motorizzazione_wasistas": 480.00,
+        "sopraluce_ad_arco_1_anta": 2000.00
+    },
+    "fiancoluce": {
+        "nota": "Fiancoluce - vetro escluso",
+        "monolaterale": {
+            "altezza_max_260": 730.00,
+            "altezza_max_300": 850.00
+        },
+        "bilaterale": {
+            "altezza_max_260": 1460.00,
+            "altezza_max_300": 1700.00
+        }
+    },
+    "vetro_blindato": {
+        "nota": "Vetro 55.6 - 15mm camera gas argon - 33 selettivo - canalina warm edge",
+        "sopraluce": 400.00,
+        "sopraluce_ad_arco": 500.00,
+        "fiancoluce_monolaterale": 500.00,
+        "tipologie": ["Trasparente", "Sabbiato"]
+    },
+    "grata": {
+        "nota": "Realizzata al laser su lamiera da 8mm zincata a caldo e verniciata",
+        "per_sopraluce": { "prezzo": 1150.00, "installazione": "lato interno" },
+        "per_sfinestratura": { "prezzo": 1150.00, "installazione": "lato esterno" },
+        "per_fiancoluce": { "prezzo": 1300.00, "installazione": "lato interno" }
+    }
+}

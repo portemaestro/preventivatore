@@ -1,0 +1,270 @@
+{
+    "modelli_cerniere_vista": {
+        "bplus": {
+            "nome": "BPlus",
+            "classe": 3,
+            "1_anta": {
+                "prezzo_base": 1280.00,
+                "fuori_standard_fino_105x240": 1570.00,
+                "supplemento_fuori_standard": 290.00,
+                "rivestimento_interno_standard_6mm": "incluso",
+                "rivestimento_esterno_standard_6mm": "incluso",
+                "rivestimenti_optional": {
+                    "fino_90x210": {
+                        "okoume_14mm_pantografato": 580.00,
+                        "alluminio_pantografato": 830.00,
+                        "pvc_pantografato": 650.00
+                    },
+                    "da_91_o_da_211_a_240": {
+                        "okoume_14mm_pantografato": 957.00,
+                        "alluminio_pantografato": 1564.00,
+                        "pvc_pantografato": 975.00
+                    }
+                },
+                "supplementi": {
+                    "kit_termico_certificato_1_0": 180.00,
+                    "telaio_ridotto": 320.00,
+                    "1_lato_rivestimento_optional_6mm_fino_210": 60.00,
+                    "1_lato_rivestimento_optional_6mm_oltre_210": 120.00,
+                    "kit_mostrina_coprifilo_da_80mm": 130.00,
+                    "telaio_bianco_o_bicolore_int_bianco_est_marrone": 280.00,
+                    "cilindro_codolo_pomolino": 90.00,
+                    "spioncino_digitale_wifi": 360.00,
+                    "kit_maniglieria_quadra_int_est": 310.00
+                }
+            },
+            "2_ante_asimmetriche": {
+                "prezzo_base": 2950.00,
+                "dettaglio": {
+                    "anta_principale": 1280.00,
+                    "anta_secondaria": 1090.00,
+                    "fuori_standard_anta_principale": 290.00,
+                    "fuori_standard_anta_secondaria": 290.00
+                },
+                "rivestimento_interno_esterno_standard_6mm": "incluso",
+                "rivestimenti_optional": {
+                    "fino_90_40x210": {
+                        "okoume_14mm_pantografato": 1080.00,
+                        "alluminio_pantografato": 1460.00,
+                        "pvc_pantografato": 1070.00
+                    },
+                    "da_91_o_da_211_a_240": {
+                        "okoume_14mm_pantografato": 1620.00,
+                        "alluminio_pantografato": 2752.00,
+                        "pvc_pantografato": 1605.00
+                    }
+                },
+                "supplementi": {
+                    "kit_termico_certificato_1_1": 260.00,
+                    "telaio_ridotto": 390.00,
+                    "1_lato_rivestimento_optional_6mm_fino_210": 120.00,
+                    "1_lato_rivestimento_optional_6mm_oltre_210": 240.00,
+                    "kit_mostrina_coprifilo_da_80mm": 130.00,
+                    "telaio_bianco_o_bicolore_int_bianco_est_marrone": 380.00,
+                    "cilindro_codolo_pomolino": 90.00,
+                    "spioncino_digitale_wifi": 360.00,
+                    "kit_maniglieria_quadra_int_est": 310.00
+                }
+            },
+            "1_anta_sopraluce": {
+                "prezzo_totale": 2420.00,
+                "dettaglio": {
+                    "anta": 1280.00,
+                    "fuori_standard": 290.00,
+                    "sopraluce_1_anta_vetro_blindato": 850.00
+                },
+                "nota": "Fuori standard in largh. fino 105 - H 210 + sopraluce H fino 260",
+                "rivestimenti_optional": {
+                    "fino_90x210": {
+                        "okoume_14mm_pantografato": 580.00,
+                        "alluminio_pantografato": 830.00,
+                        "pvc_pantografato": 650.00
+                    },
+                    "da_91_o_da_211_a_240": {
+                        "okoume_14mm_pantografato": 957.00,
+                        "alluminio_pantografato": 1564.00,
+                        "pvc_pantografato": 975.00
+                    }
+                },
+                "supplementi": {
+                    "kit_termico_certificato_1_1": 410.00,
+                    "telaio_ridotto": 420.00,
+                    "1_lato_rivestimento_optional_6mm_fino_210": 60.00,
+                    "1_lato_rivestimento_optional_6mm_oltre_210": 120.00,
+                    "kit_mostrina_coprifilo_da_80mm": 130.00,
+                    "telaio_bianco_o_bicolore_int_bianco_est_marrone": 530.00,
+                    "cilindro_codolo_pomolino": 90.00,
+                    "spioncino_digitale_wifi": 360.00,
+                    "kit_maniglieria_quadra_int_est": 310.00
+                }
+            },
+            "2_ante_asimm_sopraluce": {
+                "prezzo_totale": 3570.00,
+                "dettaglio": {
+                    "anta_principale": 1280.00,
+                    "anta_secondaria": 1090.00,
+                    "fuori_standard_anta_principale": 290.00,
+                    "sopraluce_2_ante_vetro_blindato": 910.00
+                },
+                "nota": "Anta altezza std e larghezza fuori mis. + anta secondaria misura std + sopraluce H fino 260",
+                "rivestimenti_optional": {
+                    "fino_90_40x210": {
+                        "okoume_14mm_pantografato": 1080.00,
+                        "alluminio_pantografato": 1460.00,
+                        "pvc_pantografato": 1070.00
+                    },
+                    "da_91_o_da_211_a_240": {
+                        "okoume_14mm_pantografato": 1782.00,
+                        "alluminio_pantografato": 2752.00,
+                        "pvc_pantografato": 1605.00
+                    }
+                },
+                "supplementi": {
+                    "kit_termico_certificato_1_2": 470.00,
+                    "telaio_ridotto": 490.00,
+                    "1_lato_rivestimento_optional_6mm_fino_210": 120.00,
+                    "1_lato_rivestimento_optional_6mm_oltre_210": 240.00,
+                    "kit_mostrina_coprifilo_da_80mm": 130.00,
+                    "telaio_bianco_o_bicolore_int_bianco_est_marrone": 630.00,
+                    "cilindro_codolo_pomolino": 90.00,
+                    "spioncino_digitale_wifi": 360.00,
+                    "kit_maniglieria_quadra_int_est": 310.00
+                }
+            }
+        },
+        "glass_plus": {
+            "nome": "Glass Plus",
+            "classe": 3,
+            "1_sfinestratura_dritta": {
+                "prezzo_totale": 2630.00,
+                "dettaglio": {
+                    "glass_plus_vetro_blindato": 2340.00,
+                    "fuori_standard": 290.00
+                },
+                "nota": "Fuori standard fino 105x240",
+                "rivestimenti_optional": {
+                    "fino_90x210": {
+                        "okoume_14mm_pantografato": 760.00,
+                        "alluminio_pantografato": 1460.00
+                    },
+                    "da_91x211": {
+                        "okoume_14mm_pantografato": 1137.00,
+                        "alluminio_pantografato": 2195.00
+                    }
+                },
+                "supplementi": {
+                    "kit_termico_certificato_1_3": 400.00,
+                    "telaio_ridotto": 320.00,
+                    "1_lato_rivestimento_optional_6mm_fino_210": 60.00,
+                    "1_lato_rivestimento_optional_6mm_oltre_210": 120.00,
+                    "kit_mostrina_coprifilo_da_80mm": 130.00,
+                    "telaio_bianco_o_bicolore_int_bianco_est_marrone": 280.00,
+                    "cilindro_codolo_pomolino": 90.00,
+                    "spioncino_digitale_wifi": 360.00,
+                    "kit_maniglieria_quadra_int_est": 310.00
+                }
+            },
+            "2_ante_asimm_antina_sfinestrata": {
+                "prezzo_totale": 3890.00,
+                "dettaglio": {
+                    "anta_principale_bplus": 1280.00,
+                    "anta_secondaria_sfinestratura": 2030.00,
+                    "fuori_standard_anta_principale": 290.00,
+                    "fuori_standard_anta_secondaria": 290.00
+                },
+                "nota": "Fuori standard fino 105+105x240",
+                "rivestimenti_optional": {
+                    "fino_90_40x210": {
+                        "okoume_14mm_pantografato": 1260.00,
+                        "alluminio_pantografato": 2090.00
+                    },
+                    "da_91x211": {
+                        "okoume_14mm_pantografato": 1962.00,
+                        "alluminio_pantografato": 3382.00
+                    }
+                },
+                "supplementi": {
+                    "kit_termico_certificato_1_2": 460.00,
+                    "telaio_ridotto": 420.00,
+                    "1_lato_rivestimento_optional_6mm_fino_210": 120.00,
+                    "1_lato_rivestimento_optional_6mm_oltre_210": 240.00,
+                    "kit_mostrina_coprifilo_da_80mm": 130.00,
+                    "telaio_bianco_o_bicolore_int_bianco_est_marrone": 380.00,
+                    "cilindro_codolo_pomolino": 90.00,
+                    "spioncino_digitale_wifi": 360.00,
+                    "kit_maniglieria_quadra_int_est": 310.00
+                }
+            }
+        },
+        "magnumc4": {
+            "nome": "MagnumC4",
+            "classe": 4,
+            "1_anta": {
+                "prezzo_base": 1780.00,
+                "misure_standard": "80/85/90 x 210"
+            },
+            "antina_asimmetrica": {
+                "prezzo": 1190.00,
+                "misure": "30/40 x 210"
+            }
+        },
+        "rotox_vista": {
+            "nome": "Rotox Vista",
+            "classe": 4,
+            "1_anta": {
+                "prezzo_base": 2140.00,
+                "misure_standard": "80/85/90 x 210"
+            },
+            "antina_asimmetrica": {
+                "prezzo": 1600.00,
+                "misure": "30/40 x 210"
+            }
+        },
+        "glass_plus_magnumc4": {
+            "nome": "Glass Plus MagnumC4",
+            "classe": 4,
+            "nota": "1 sfinestratura rettangolare, vetro incluso",
+            "1_anta": {
+                "prezzo_base": 2840.00
+            }
+        },
+        "rotox": {
+            "nome": "Rotox",
+            "classe": 4,
+            "1_anta": {
+                "prezzo_base": 3200.00
+            },
+            "antina_cieca": {
+                "prezzo": 1090.00
+            }
+        }
+    },
+    "supplementi_generici": {
+        "porta_ad_arco_per_anta": 1800.00,
+        "predisposta_senza_rivestimenti": -100.00
+    },
+    "ante_simmetriche": {
+        "nota": "Per anta simmetrica usare il prezzo dell'antina simmetrica (80/85/90x210) = prezzo anta secondaria del modello corrispondente",
+        "bplus": 1090.00,
+        "magnumc4": 1190.00,
+        "rotox_vista": 1600.00
+    },
+    "produzione_express": {
+        "platinum_5gg": {
+            "prezzo": 250.00,
+            "giorni_lavorativi": 5,
+            "netto": true
+        },
+        "gold_10gg": {
+            "prezzo": 140.00,
+            "giorni_lavorativi": 10,
+            "netto": true
+        },
+        "silver_15gg": {
+            "prezzo": 100.00,
+            "giorni_lavorativi": 15,
+            "netto": true
+        },
+        "nota": "Disponibile per porte con rivestimenti laminati. Escluse colorazioni telaio diverse da marrone/bianco e lavorazioni speciali (fiancoluce, sopraluce, sfinestrata, telaio ad adattare)"
+    }
+}

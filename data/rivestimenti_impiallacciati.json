@@ -1,0 +1,92 @@
+{
+    "nota": "Rivestimenti impiallacciati/laccati 6/7mm per interno",
+    "venatura_verticale": {
+        "gruppo_base": {
+            "anta_standard": 280.00,
+            "antina_standard": 170.00,
+            "essenze": [
+                { "codice": "ES 60-61", "nome": "Mogano" },
+                { "codice": "ES 62-63-64", "nome": "Tanganika" },
+                { "codice": "ES 65", "nome": "Tanganika Tinto Ciliegio" },
+                { "codice": "ES 66-67", "nome": "Ciliegio" },
+                { "nome": "Yellow Pine" }
+            ]
+        },
+        "gruppo_frassino_rovere": {
+            "anta_standard": 360.00,
+            "antina_standard": 250.00,
+            "essenze": [
+                { "codice": "FA 44-45-46-47-48-59", "nome": "Frassino" },
+                { "codice": "ES 68-69-70", "nome": "Rovere" },
+                { "codice": "ES 71-72", "nome": "Noce Nazionale" },
+                { "nome": "Poro Yellow Pine" },
+                { "codice": "DA FA 49 A FA 58", "nome": "Poro Frassino" },
+                { "nome": "Poro Rovere" }
+            ]
+        }
+    },
+    "venatura_orizzontale": {
+        "nota": "Supplemento +20% sul prezzo venatura verticale"
+    },
+    "laccati": {
+        "anta_standard": 320.00,
+        "antina_standard": 200.00,
+        "colori_standard": ["Marrone 8017", "Avorio 1013", "Verde 6005", "Bianco 9010", "Bianco 9016", "Rosso 3005"],
+        "supplemento_ral_a_campione": {
+            "anta": 80.00,
+            "antina": 80.00
+        },
+        "supplemento_metallizzati_9005_9006_9007": {
+            "anta": 250.00,
+            "antina": 250.00
+        }
+    },
+    "supplementi_fuori_standard": {
+        "fino_1000x2350": "+40%",
+        "fino_1250x2500": "+60%"
+    },
+    "kit_imbotte_essenze_laccati": {
+        "nota": "Kit imbotte + coprifilo con aletta (2 pz. 215 + 1 pz. 100 - coprifili da 80mm)",
+        "luce_porta_90x210": {
+            "legno_mogano_tanganika": {
+                "muro_fino_100mm": 530.00,
+                "muro_fino_200mm": 660.00,
+                "muro_fino_350mm": 870.00
+            },
+            "legno_frassino_rovere": {
+                "muro_fino_100mm": 640.00,
+                "muro_fino_200mm": 770.00,
+                "muro_fino_350mm": 980.00
+            },
+            "laccato_mdf_ral_standard": {
+                "muro_fino_100mm": 530.00,
+                "muro_fino_200mm": 660.00,
+                "muro_fino_350mm": 870.00,
+                "supplemento_ral_8017_1013_6005_9010_3005_9016": 0,
+                "supplemento_ral_a_campione": 80.00,
+                "supplemento_metallizzati": 250.00
+            }
+        },
+        "supplemento_fino_misura_120x238": "+30%"
+    },
+    "kit_coprifilo_essenze_laccati": {
+        "mogano_tanganika": {
+            "piatto_70mm_h225": null,
+            "con_aletta_80mm_h225": 225.00,
+            "piatto_100mm_h225": null,
+            "piatto_70mm_h300": null,
+            "con_aletta_80mm_h300": 310.00,
+            "piatto_100mm_h300": null
+        },
+        "frassino_rovere": {
+            "con_aletta_80mm_h225": 340.00,
+            "con_aletta_80mm_h300": 490.00
+        },
+        "laccato_mdf_standard": {
+            "con_aletta_80mm_h225": 225.00,
+            "con_aletta_80mm_h300": 310.00,
+            "supplemento_ral_a_campione": 40.00,
+            "supplemento_metallizzati": 180.00
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "serratura_motorizzata_iseo_x1r": {
+        "modelli": [
+            {
+                "modello": "Attuatore",
+                "descrizione": "Chiusura automatica motorizzata. Apertura da citofono/pulsante. Apertura dall'esterno solo con chiave",
+                "prezzo": 1680.00
+            },
+            {
+                "modello": "Easy",
+                "descrizione": "Apertura e chiusura automatica motorizzata. Lettore esterno + 3 trasponder. Apertura da citofono/pulsante",
+                "prezzo": 1970.00
+            },
+            {
+                "modello": "Smart",
+                "descrizione": "Apertura e chiusura automatica motorizzata. Lettore esterno + 5 tessere. Apertura da citofono/pulsante. Apertura con smartphone. Integrazione domotica",
+                "prezzo": 2360.00
+            }
+        ],
+        "optional_x1r": [
+            { "descrizione": "Bridge per apertura da remoto", "prezzo": 600.00 },
+            { "descrizione": "Tastierino numerico", "prezzo": 540.00 },
+            { "descrizione": "Lettore impronte digitali", "prezzo": 860.00 },
+            { "descrizione": "Lettore nascosto RFID e Bluetooth (N.D. per rivest. alluminio)", "prezzo": 380.00 },
+            { "descrizione": "Trasponder portachiavi", "prezzo": 40.00 },
+            { "descrizione": "Set di 3 chiavi trasponder aggiuntive", "prezzo": 200.00 }
+        ]
+    },
+    "dsmart_2_0": {
+        "nota": "Cilindro motorizzato con tastierino",
+        "modelli": [
+            { "codice": "DSMA2B", "versione": "Batteria", "prezzo": 1100.00 },
+            { "codice": "DSMA2R", "versione": "Rete Elettrica", "prezzo": null }
+        ],
+        "accessori": [
+            { "codice": "DSBRID", "descrizione": "Bridge per apertura da remoto", "prezzo": 600.00 },
+            { "codice": "DSLETR", "descrizione": "Lettore trasponder", "prezzo": 380.00 },
+            { "codice": "DSLEIM", "descrizione": "Lettore impronta", "prezzo": 380.00 }
+        ]
+    }
+}

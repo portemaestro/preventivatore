@@ -1,0 +1,12 @@
+{
+    "nota": "Rivestimenti PVC - adatti per l'utilizzo in ambiente esterno riparato",
+    "prezzi": {
+        "anta": 650.00,
+        "antina": 420.00
+    },
+    "maggiorazioni_fuori_standard": {
+        "fino_90x210": 0,
+        "da_90_1x210_1_a_100x230": "35%",
+        "da_100_1x230_1_a_125x250": "50%"
+    }
+}

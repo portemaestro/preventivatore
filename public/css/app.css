@@ -1,0 +1,227 @@
+/* ===== Variabili brand ===== */
+:root {
+    --brand-primary: #1a3a5c;
+    --brand-secondary: #c5a44e;
+    --brand-light: #f8f9fa;
+    --brand-dark: #0d1b2a;
+}
+
+/* ===== Generali ===== */
+body {
+    background-color: var(--brand-light);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ===== Navbar ===== */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+    background-color: var(--brand-primary) !important;
+}
+
+/* ===== Login ===== */
+.card {
+    border-radius: 12px;
+}
+
+.btn-primary {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+}
+
+.text-primary {
+    color: var(--brand-primary) !important;
+}
+
+/* ===== Configuratore Layout ===== */
+.configuratore-form {
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+.riepilogo-sticky {
+    position: sticky;
+    top: 76px;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+}
+
+/* ===== Accordion personalizzato ===== */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(26, 58, 92, 0.08);
+    color: var(--brand-primary);
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(26, 58, 92, 0.25);
+}
+
+.accordion-button .badge {
+    font-size: 0.7rem;
+}
+
+/* ===== Badge prezzo ===== */
+.badge-prezzo {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: #e8f4e8;
+    color: #2e7d32;
+    white-space: nowrap;
+}
+
+.badge-prezzo.supplemento {
+    background-color: #fff3e0;
+    color: #e65100;
+}
+
+.badge-prezzo.incluso {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.badge-prezzo.sconto {
+    background-color: #fce4ec;
+    color: #c62828;
+}
+
+/* ===== Riepilogo ===== */
+.riepilogo-card {
+    border: 2px solid var(--brand-primary);
+    border-radius: 12px;
+}
+
+.riepilogo-card .card-header {
+    background-color: var(--brand-primary);
+    color: white;
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+}
+
+.riepilogo-riga {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 0.9rem;
+}
+
+.riepilogo-riga.totale {
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-top: 2px solid var(--brand-primary);
+    padding-top: 8px;
+    margin-top: 4px;
+    color: var(--brand-primary);
+}
+
+.riepilogo-riga .etichetta {
+    color: #555;
+}
+
+.riepilogo-riga .valore {
+    font-weight: 600;
+    text-align: right;
+}
+
+/* ===== Riepilogo Mobile ===== */
+.riepilogo-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--brand-primary);
+    color: white;
+    padding: 10px 16px;
+    z-index: 1030;
+    display: none;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+.riepilogo-mobile .totale-mobile {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* ===== Form ===== */
+.form-label {
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.form-select, .form-control {
+    font-size: 0.9rem;
+}
+
+select.form-select option:disabled {
+    color: #999;
+}
+
+/* Sezione con prezzo inline */
+.opzione-con-prezzo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991.98px) {
+    .riepilogo-sticky {
+        position: static;
+        max-height: none;
+    }
+
+    .riepilogo-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main.container-fluid {
+        padding-bottom: 70px;
+    }
+}
+
+@media (min-width: 992px) {
+    .riepilogo-mobile {
+        display: none !important;
+    }
+}
+
+/* ===== Spinner di caricamento listino ===== */
+.caricamento-listino {
+    text-align: center;
+    padding: 3rem;
+}
+
+.caricamento-listino .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* ===== Utilità ===== */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-brand {
+    color: var(--brand-primary);
+}
+
+.bg-brand {
+    background-color: var(--brand-primary);
+}
+
+.border-brand {
+    border-color: var(--brand-primary) !important;
+}

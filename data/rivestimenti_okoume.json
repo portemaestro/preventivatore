@@ -1,0 +1,186 @@
+{
+    "nota": "Rivestimenti Okoumè - Adatti per l'utilizzo in ambiente esterno riparato",
+    "nota_supplementi": "Supplementi riferiti a 1 anta. Per anta asimmetrica: x1.5. Per anta simmetrica: x2",
+    "prezzi_base": {
+        "fino_90x210": {
+            "classici_mdf_7mm": { "pantografato": 520.00, "liscio": 470.00 },
+            "classici_okoume_12_14mm": { "pantografato": 580.00, "liscio": 550.00 },
+            "inserti_okoume_12_14mm": { "pantografato": 740.00, "liscio": null },
+            "inox_okoume_12_14mm": { "pantografato": 880.00, "liscio": null },
+            "strange_okoume_12_14mm": { "pantografato": 920.00, "liscio": null },
+            "anticati_senza_cornici_okoume_14mm": { "pantografato": 740.00, "liscio": null },
+            "anticati_senza_cornici_mdf_12mm": { "pantografato": 1550.00, "liscio": null },
+            "anticati_con_cornici_okoume_14mm": { "pantografato": 2270.00, "liscio": null },
+            "anticati_con_cornici_mdf_12mm": { "pantografato": 1580.00, "liscio": null }
+        },
+        "antina_fino_60x210": {
+            "classici_mdf_7mm": { "pantografato": 460.00, "liscio": 440.00 },
+            "classici_okoume_12_14mm": { "pantografato": 500.00, "liscio": 470.00 },
+            "inserti_okoume_12_14mm": { "pantografato": 580.00, "liscio": null },
+            "inox_okoume_12_14mm": { "pantografato": 620.00, "liscio": null },
+            "strange_okoume_12_14mm": { "pantografato": 620.00, "liscio": null },
+            "anticati_senza_cornici_okoume_14mm": { "pantografato": 580.00, "liscio": null },
+            "anticati_senza_cornici_mdf_12mm": { "pantografato": 940.00, "liscio": null },
+            "anticati_con_cornici_okoume_14mm": { "pantografato": 1440.00, "liscio": null },
+            "anticati_con_cornici_mdf_12mm": { "pantografato": 1100.00, "liscio": null }
+        }
+    },
+    "serie_finiture": {
+        "OC": { "tipologia": "Okoumè", "supplemento": "standard" },
+        "OP": { "tipologia": "Okoumè Laccato a Poro Aperto", "supplemento": 150.00 },
+        "LA": { "tipologia": "MDF Idro Laccati Standard", "supplemento": "standard" },
+        "ES": { "tipologia": "Impiallacciati in Essenza", "supplemento": 490.00 },
+        "FA": { "tipologia": "Impiallacciati Frassino", "supplemento": 490.00 },
+        "LR": { "tipologia": "MDF Idro Laccati Raffaello", "supplemento": 280.00 },
+        "ral_a_campione": { "supplemento": 200.00 }
+    },
+    "maggiorazioni_fuori_standard": {
+        "anta_principale": {
+            "fino_90x210": 0,
+            "da_90_1x210_1_a_100x235": "50%",
+            "da_100_1x235_1_a_110x240": "65%",
+            "oltre_110x240": "80%"
+        },
+        "anta_secondaria": {
+            "fino_60x210": 0,
+            "da_210_1_a_235": "50%",
+            "da_235_1_a_240": "65%",
+            "oltre_240": "80%"
+        }
+    },
+    "lavorazioni_speciali": [
+        { "nome": "Pantografatura lavorazione quadra", "supplemento": 155.00 },
+        { "nome": "Dogatura a passo su misura", "supplemento": 385.00 },
+        { "nome": "Fascione/Zoccolo", "supplemento": 210.00 },
+        { "nome": "Lavorazione superiore ad arco", "supplemento": 250.00 },
+        { "nome": "Pantografatura lavorazione spigolo vivo", "supplemento": 150.00 },
+        { "nome": "Copri traverso sopraluce", "supplemento": 180.00 }
+    ],
+    "sfinestrature_okoume": {
+        "lato_esterno": {
+            "sfinestratura_dritta": 180.00,
+            "sfinestratura_curva": 240.00
+        },
+        "lato_interno": {
+            "sfinestratura_dritta_standard_coprifilo_vers_a": "standard",
+            "sfinestratura_12mm_fermavetro_scomparsa_vers_b": 800.00,
+            "nota": "Versione B obbligatoria per sfinestrature curve"
+        }
+    },
+    "coprifili_okoume_mdf": {
+        "nota": "Kit coprifilo Okoumè/MDF (piatto senza aletta)",
+        "tabella": {
+            "standard_7cm": {
+                "fino_90x210": 280.00,
+                "da_90_1x210_1_a_120x238": 310.00,
+                "da_120_1x238_a_190x238": 345.00,
+                "190x300": 365.00
+            },
+            "da_7_1_a_15cm": {
+                "fino_90x210": 320.00,
+                "da_90_1x210_1_a_120x238": 355.00,
+                "da_120_1x238_a_190x238": 420.00,
+                "190x300": 450.00
+            },
+            "da_15_1_a_30cm": {
+                "fino_90x210": 420.00,
+                "da_90_1x210_1_a_120x238": 460.00,
+                "da_120_1x238_a_190x238": 555.00,
+                "190x300": 580.00
+            }
+        },
+        "supplemento_poro_aperto": 150.00,
+        "supplemento_impiallacciato_essenza": 180.00
+    },
+    "imbotti_okoume_mdf": {
+        "nota": "Kit imbotte Okoumè/MDF + coprifilo da 7cm con aletta",
+        "tabella": {
+            "fino_10cm": {
+                "fino_90x210": 600.00,
+                "da_90_1x210_1_a_120x238": 665.00,
+                "da_120_1x238_a_190x238": 740.00,
+                "190x288": 800.00
+            },
+            "da_10_1_a_20cm": {
+                "fino_90x210": 675.00,
+                "da_90_1x210_1_a_120x238": 740.00,
+                "da_120_1x238_a_190x238": 815.00,
+                "190x288": 890.00
+            },
+            "da_20_1_a_30cm": {
+                "fino_90x210": 750.00,
+                "da_90_1x210_1_a_120x238": 815.00,
+                "da_120_1x238_a_190x238": 890.00,
+                "190x288": 950.00
+            },
+            "da_30_1_a_40cm": {
+                "fino_90x210": 825.00,
+                "da_90_1x210_1_a_120x238": 890.00,
+                "da_120_1x238_a_190x238": 950.00,
+                "190x288": 1020.00
+            }
+        },
+        "supplemento_impiallacciato_essenza": 250.00,
+        "coprifilo_fuori_standard_larghezza": {
+            "da_7_1_a_15cm": {
+                "fino_90x210": 340.00,
+                "da_90_1x210_1_a_120x238": 375.00,
+                "da_120_1x238_a_190x238": 440.00
+            },
+            "da_15_1_a_30cm": {
+                "fino_90x210": 440.00,
+                "da_90_1x210_1_a_120x238": 495.00,
+                "da_120_1x238_a_190x238": 580.00
+            }
+        },
+        "supplemento_poro_aperto_coprifili": 460.00,
+        "supplemento_essenza_coprifili": 590.00
+    },
+    "catalogo_modelli_analitici": {
+        "nota": "Prezzi riferiti fino alla misura 90x210 - 1 anta",
+        "modelli": [
+            { "pagina": 52, "modello": "PLIS001", "finitura": "Frassino Orizz. Tinto Rovere", "prezzo": 1850.00 },
+            { "pagina": 54, "modello": "FIORE", "finitura": null, "prezzo": 980.00 },
+            { "pagina": 55, "modello": "PRAGA ART SX", "finitura": "MDF Idro Laccato RAL 9006", "prezzo": 980.00 },
+            { "pagina": 55, "modello": "PRAGA ART SX", "finitura": "MDF Idro RAL 9010", "prezzo": 980.00 },
+            { "pagina": 55, "modello": "PLIS002", "finitura": null, "prezzo": 1050.00 },
+            { "pagina": 55, "modello": "MONTANA SX", "finitura": "Okoumè Tinto Mogano", "prezzo": 1280.00 },
+            { "pagina": 55, "modello": "ONDA TONDA 3 SX", "finitura": "Frassino Tinto Rovere", "prezzo": 750.00 },
+            { "pagina": 55, "modello": "MIRROR SX", "finitura": "Yellow Pine Tinto Noce Medio", "prezzo": 1050.00 },
+            { "pagina": 55, "modello": "MIRROR SX", "finitura": "MDF Idro 9010", "prezzo": 1050.00 },
+            { "pagina": 56, "modello": "MIRROR SX", "finitura": "Frassino Grigio TW710", "prezzo": 750.00 },
+            { "pagina": 57, "modello": "BOLLE SX", "finitura": "Frassino Grigio TW710", "prezzo": 980.00 },
+            { "pagina": 59, "modello": "BOLLE DX", "finitura": null, "prezzo": 1480.00 },
+            { "pagina": 59, "modello": "SEA", "finitura": "MDF Idro RAL 9010", "prezzo": 1030.00 },
+            { "pagina": 59, "modello": "SEA", "finitura": "MDF Idro RAL 9010", "prezzo": 880.00 },
+            { "pagina": 59, "modello": "AVA001 DX CON MANIGLIONE INTEGRATO", "finitura": "Okoumè Poro RAL 1019", "prezzo": 1360.00 },
+            { "pagina": 59, "modello": "OINOX", "finitura": "Okoumè Poro RAL 9010", "prezzo": 1030.00 },
+            { "pagina": 59, "modello": "OINOX", "finitura": "MDF Idro RAL 9010", "prezzo": 1180.00 },
+            { "pagina": 59, "modello": "LEGO", "finitura": "MDF Idro RAL 9010", "prezzo": 1360.00 },
+            { "pagina": 60, "modello": "LEGO", "finitura": "Frassino Orizz. T. Noce Medio", "prezzo": 1360.00 },
+            { "pagina": 61, "modello": "HORIZONTAL", "finitura": "Okoumè Poro RAL 9010", "prezzo": 740.00 },
+            { "pagina": 61, "modello": "AVA001 SX", "finitura": "Okoumè Poro RAL 1019", "prezzo": 740.00 },
+            { "pagina": 61, "modello": "IKON", "finitura": "Frassino Orizzontale T. Wengè", "prezzo": 740.00 },
+            { "pagina": 61, "modello": "VENOX DX", "finitura": "Frassino Orizz. T. Noce Medio", "prezzo": 740.00 },
+            { "pagina": 61, "modello": "MARINA", "finitura": "MDF Idro RAL 3003", "prezzo": 740.00 },
+            { "pagina": 61, "modello": "URSA", "finitura": "Okoumè Tinto Noce Medio", "prezzo": 740.00 },
+            { "pagina": 61, "modello": "TEKNOLOGY", "finitura": "Okoumè Tinto Noce Scuro", "prezzo": 1240.00 },
+            { "pagina": 61, "modello": "SIRIO SX", "finitura": "MDF Idro RAL 6005", "prezzo": 880.00 },
+            { "pagina": 62, "modello": "ALDEBARAN", "finitura": "Okoumè Tinto Wengè", "prezzo": 740.00 },
+            { "pagina": 63, "modello": "ALCOR", "finitura": "MDF Idro RAL 3005", "prezzo": 740.00 },
+            { "pagina": "da 64", "modello": "CASSIOPEA", "finitura": "Impiallacciato Ciliegio", "prezzo": 885.00 },
+            { "pagina": "da 64 a 74", "modello": "CIGNO", "finitura": "Okoumè Poro RAL 9010", "prezzo": 580.00 },
+            { "pagina": "da 64 a 74", "modello": "CARINA", "finitura": "Okoumè Tinto Wengè", "prezzo": 740.00 },
+            { "pagina": "da 64 a 74", "modello": "CARINA", "finitura": "Colori Standard", "prezzo": 740.00 },
+            { "pagina": 75, "modello": "CORVUS/CRUX/IDRA/LIBRA/MUSCA/PEGASUS/LIGHT5", "finitura": "Frassino Orizz. Poro RAL 9010", "prezzo": 2040.00 },
+            { "pagina": 76, "modello": "3 BUGNE LAVORAZIONE QUADRA", "finitura": "Finiture Serie OC/LR/LA", "prezzo": 2760.00 },
+            { "pagina": 77, "modello": "3 BUGNE LAVORAZIONE QUADRA", "finitura": "Finiture Serie OP", "prezzo": 3760.00 },
+            { "pagina": 78, "modello": "TUTTI I MODELLI ANTICATI CON CORNICI", "finitura": "MDF Idro RAL 3005", "prezzo": 2760.00 },
+            { "pagina": 79, "modello": "ALFA", "finitura": "Frassino", "prezzo": null },
+            { "pagina": 79, "modello": "BETA/DELTA/OMEGA/GAMMA/EPSILON", "finitura": "Frassino Poro RAL 9010", "prezzo": null },
+            { "pagina": 79, "modello": "GAMMA", "finitura": "Frassino T. Noce Scuro", "prezzo": null },
+            { "pagina": 79, "modello": "THETA", "finitura": "Frassino", "prezzo": null },
+            { "pagina": 79, "modello": "BETA/DELTA/OMEGA/GAMMA/EPSILON", "finitura": null, "prezzo": null }
+        ]
+    }
+}
