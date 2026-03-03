@@ -33,7 +33,6 @@ const Preventivo = {
         const valori = [];
         let idx = 1;
 
-        // Filtro per rivenditore (per utenti non-admin)
         if (filtri.rivenditore_id) {
             condizioni.push(`p.rivenditore_id = $${idx}`);
             valori.push(filtri.rivenditore_id);
@@ -52,13 +51,35 @@ const Preventivo = {
             idx++;
         }
 
+        if (filtri.cerca) {
+            condizioni.push(`(p.numero::text ILIKE $${idx} OR r.ragione_sociale ILIKE $${idx})`);
+            valori.push(`%${filtri.cerca}%`);
+            idx++;
+        }
+
+        if (filtri.data_da) {
+            condizioni.push(`p.data_creazione >= $${idx}`);
+            valori.push(filtri.data_da);
+            idx++;
+        }
+
+        if (filtri.data_a) {
+            condizioni.push(`p.data_creazione < ($${idx}::date + interval '1 day')`);
+            valori.push(filtri.data_a);
+            idx++;
+        }
+
         if (condizioni.length > 0) {
             query += ' WHERE ' + condizioni.join(' AND ');
         }
 
         query += ' ORDER BY p.numero DESC';
 
-        if (filtri.limite) {
+        if (filtri.per_pagina) {
+            const offset = ((filtri.pagina || 1) - 1) * filtri.per_pagina;
+            query += ` LIMIT $${idx} OFFSET $${idx + 1}`;
+            valori.push(filtri.per_pagina, offset);
+        } else if (filtri.limite) {
             query += ` LIMIT $${idx}`;
             valori.push(filtri.limite);
             idx++;
@@ -68,12 +89,63 @@ const Preventivo = {
         return rows;
     },
 
+    async contaConFiltri(filtri = {}) {
+        let query = `SELECT COUNT(*) as totale
+                     FROM preventivi p
+                     LEFT JOIN rivenditori r ON p.rivenditore_id = r.id`;
+        const condizioni = [];
+        const valori = [];
+        let idx = 1;
+
+        if (filtri.rivenditore_id) {
+            condizioni.push(`p.rivenditore_id = $${idx}`);
+            valori.push(filtri.rivenditore_id);
+            idx++;
+        }
+
+        if (filtri.stato) {
+            condizioni.push(`p.stato = $${idx}`);
+            valori.push(filtri.stato);
+            idx++;
+        }
+
+        if (filtri.agenzia) {
+            condizioni.push(`p.agenzia = $${idx}`);
+            valori.push(filtri.agenzia);
+            idx++;
+        }
+
+        if (filtri.cerca) {
+            condizioni.push(`(p.numero::text ILIKE $${idx} OR r.ragione_sociale ILIKE $${idx})`);
+            valori.push(`%${filtri.cerca}%`);
+            idx++;
+        }
+
+        if (filtri.data_da) {
+            condizioni.push(`p.data_creazione >= $${idx}`);
+            valori.push(filtri.data_da);
+            idx++;
+        }
+
+        if (filtri.data_a) {
+            condizioni.push(`p.data_creazione < ($${idx}::date + interval '1 day')`);
+            valori.push(filtri.data_a);
+            idx++;
+        }
+
+        if (condizioni.length > 0) {
+            query += ' WHERE ' + condizioni.join(' AND ');
+        }
+
+        const { rows } = await pool.query(query, valori);
+        return parseInt(rows[0].totale);
+    },
+
     async crea(dati) {
         const client = await pool.connect();
         try {
             await client.query('BEGIN');
 
-            // Ottieni prossimo numero preventivo
             const { rows: [{ nextval }] } = await client.query(
                 "SELECT nextval('preventivo_numero_seq')"
             );
@@ -148,6 +220,26 @@ const Preventivo = {
             [nuovoStato, id]
         );
         return rows[0] || null;
+    },
+
+    async elimina(id) {
+        await pool.query('DELETE FROM preventivi WHERE id = $1 AND stato = $2', [id, 'bozza']);
+    },
+
+    // Statistiche per dashboard admin
+    async statistiche() {
+        const { rows } = await pool.query(`
+            SELECT
+                COUNT(*) as totale_preventivi,
+                COUNT(*) FILTER (WHERE stato = 'bozza') as bozze,
+                COUNT(*) FILTER (WHERE stato = 'preventivo') as preventivi_attivi,
+                COUNT(*) FILTER (WHERE stato = 'ordine') as ordini,
+                COUNT(*) FILTER (WHERE data_creazione >= date_trunc('month', CURRENT_DATE)) as mese_corrente,
+                COALESCE(SUM(totale) FILTER (WHERE stato = 'ordine'), 0) as fatturato_ordini,
+                COALESCE(SUM(totale) FILTER (WHERE stato = 'ordine' AND data_creazione >= date_trunc('month', CURRENT_DATE)), 0) as fatturato_mese
+            FROM preventivi
+        `);
+        return rows[0];
     },
 
     // Posizioni

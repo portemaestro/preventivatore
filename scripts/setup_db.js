@@ -83,12 +83,28 @@ CREATE TABLE IF NOT EXISTS posizioni (
     ordinamento INTEGER DEFAULT 0
 );
 
+-- Tabella listino JSON (JSONB in PostgreSQL)
+CREATE TABLE IF NOT EXISTS listino_json (
+    sezione VARCHAR(100) PRIMARY KEY,
+    dati JSONB NOT NULL,
+    aggiornato_il TIMESTAMP DEFAULT NOW()
+);
+
+-- Tabella backup listino
+CREATE TABLE IF NOT EXISTS listino_backup (
+    id SERIAL PRIMARY KEY,
+    sezione VARCHAR(100) NOT NULL,
+    dati JSONB NOT NULL,
+    creato_il TIMESTAMP DEFAULT NOW()
+);
+
 -- Indici
 CREATE INDEX IF NOT EXISTS idx_preventivi_rivenditore ON preventivi(rivenditore_id);
 CREATE INDEX IF NOT EXISTS idx_preventivi_stato ON preventivi(stato);
 CREATE INDEX IF NOT EXISTS idx_preventivi_numero ON preventivi(numero);
 CREATE INDEX IF NOT EXISTS idx_posizioni_preventivo ON posizioni(preventivo_id);
 CREATE INDEX IF NOT EXISTS idx_rivenditori_utente ON rivenditori(utente_id);
+CREATE INDEX IF NOT EXISTS idx_listino_backup_sezione ON listino_backup(sezione, creato_il DESC);
 `;
 
 async function setup() {

@@ -13,6 +13,31 @@ export function renderNavbar() {
         ? '<span class="badge bg-warning text-dark ms-2">Admin</span>'
         : '<span class="badge bg-info ms-2">Rivenditore</span>';
 
+    const hashCorrente = window.location.hash.replace('#', '');
+
+    const adminDropdown = isAdmin() ? `
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ${hashCorrente.startsWith('admin') ? 'active' : ''}"
+               href="#" role="button" data-bs-toggle="dropdown">
+                <i class="bi bi-gear me-1"></i>Admin
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#admin">
+                    <i class="bi bi-speedometer2 me-2"></i>Dashboard
+                </a></li>
+                <li><a class="dropdown-item" href="#admin-rivenditori">
+                    <i class="bi bi-people me-2"></i>Rivenditori
+                </a></li>
+                <li><a class="dropdown-item" href="#admin-preventivi">
+                    <i class="bi bi-file-earmark-text me-2"></i>Preventivi
+                </a></li>
+                <li><a class="dropdown-item" href="#admin-listino">
+                    <i class="bi bi-tags me-2"></i>Listino Prezzi
+                </a></li>
+            </ul>
+        </li>
+    ` : '';
+
     container.innerHTML = `
         <nav class="navbar navbar-expand-md navbar-dark shadow-sm">
             <div class="container-fluid">
@@ -25,10 +50,11 @@ export function renderNavbar() {
                 <div class="collapse navbar-collapse" id="navbarMain">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#configuratore">
+                            <a class="nav-link ${!hashCorrente.startsWith('admin') ? 'active' : ''}" href="#configuratore">
                                 <i class="bi bi-plus-circle me-1"></i>Nuovo Preventivo
                             </a>
                         </li>
+                        ${adminDropdown}
                     </ul>
                     <div class="d-flex align-items-center">
                         <span class="text-light me-3">

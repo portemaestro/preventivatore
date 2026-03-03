@@ -35,8 +35,14 @@ const Rivenditore = {
         }
 
         if (filtri.cerca) {
-            condizioni.push(`(r.ragione_sociale ILIKE $${idx} OR r.citta ILIKE $${idx})`);
+            condizioni.push(`(r.ragione_sociale ILIKE $${idx} OR r.citta ILIKE $${idx} OR r.piva ILIKE $${idx})`);
             valori.push(`%${filtri.cerca}%`);
+            idx++;
+        }
+
+        if (filtri.attivo !== undefined) {
+            condizioni.push(`COALESCE(u.attivo, true) = $${idx}`);
+            valori.push(filtri.attivo);
             idx++;
         }
 
@@ -46,8 +52,49 @@ const Rivenditore = {
 
         query += ' ORDER BY r.ragione_sociale';
 
+        // Paginazione
+        if (filtri.per_pagina) {
+            const offset = ((filtri.pagina || 1) - 1) * filtri.per_pagina;
+            query += ` LIMIT $${idx} OFFSET $${idx + 1}`;
+            valori.push(filtri.per_pagina, offset);
+        }
+
         const { rows } = await pool.query(query, valori);
         return rows;
+    },
+
+    async contaConFiltri(filtri = {}) {
+        let query = `SELECT COUNT(*) as totale
+                     FROM rivenditori r
+                     LEFT JOIN utenti u ON r.utente_id = u.id`;
+        const condizioni = [];
+        const valori = [];
+        let idx = 1;
+
+        if (filtri.agenzia) {
+            condizioni.push(`r.agenzia = $${idx}`);
+            valori.push(filtri.agenzia);
+            idx++;
+        }
+
+        if (filtri.cerca) {
+            condizioni.push(`(r.ragione_sociale ILIKE $${idx} OR r.citta ILIKE $${idx} OR r.piva ILIKE $${idx})`);
+            valori.push(`%${filtri.cerca}%`);
+            idx++;
+        }
+
+        if (filtri.attivo !== undefined) {
+            condizioni.push(`COALESCE(u.attivo, true) = $${idx}`);
+            valori.push(filtri.attivo);
+            idx++;
+        }
+
+        if (condizioni.length > 0) {
+            query += ' WHERE ' + condizioni.join(' AND ');
+        }
+
+        const { rows } = await pool.query(query, valori);
+        return parseInt(rows[0].totale);
     },
 
     async crea(dati) {
@@ -106,6 +153,13 @@ const Rivenditore = {
     async contaTotale() {
         const { rows } = await pool.query('SELECT COUNT(*) as totale FROM rivenditori');
         return parseInt(rows[0].totale);
+    },
+
+    async listaAgenzie() {
+        const { rows } = await pool.query(
+            `SELECT DISTINCT agenzia FROM rivenditori WHERE agenzia IS NOT NULL ORDER BY agenzia`
+        );
+        return rows.map(r => r.agenzia);
     }
 };
 

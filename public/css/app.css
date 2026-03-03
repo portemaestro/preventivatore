@@ -225,3 +225,157 @@ select.form-select option:disabled {
 .border-brand {
     border-color: var(--brand-primary) !important;
 }
+
+/* ===== Area Admin ===== */
+.area-admin {
+    max-width: 1400px;
+}
+
+.nav-admin .nav-link {
+    color: var(--brand-primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.nav-admin .nav-link.active {
+    color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    font-weight: 600;
+}
+
+/* Tabella admin */
+.table-admin {
+    font-size: 0.875rem;
+}
+
+.table-admin thead {
+    background-color: var(--brand-light);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.table-admin thead th {
+    font-weight: 600;
+    color: var(--brand-primary);
+    border-bottom: 2px solid var(--brand-primary);
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+
+.table-admin tbody td {
+    padding: 8px 12px;
+    vertical-align: middle;
+}
+
+.riga-hover:hover {
+    background-color: rgba(26, 58, 92, 0.04);
+}
+
+/* Card statistiche dashboard */
+.stat-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.15s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.stat-card .stat-icona {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.stat-card .stat-valore {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--brand-dark);
+}
+
+.stat-card .stat-etichetta {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Editor listino */
+.listino-card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+}
+
+.listino-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.listino-card .card-body {
+    padding: 1rem;
+}
+
+.listino-card .sezione-icona {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Editor JSON */
+.editor-json textarea {
+    font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    tab-size: 2;
+    min-height: 400px;
+    resize: vertical;
+}
+
+.editor-json .validazione-ok {
+    color: #198754;
+    font-size: 0.8rem;
+}
+
+.editor-json .validazione-errore {
+    color: #dc3545;
+    font-size: 0.8rem;
+}
+
+/* Editor tabellare */
+.editor-tabella input,
+.editor-tabella select {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+}
+
+.editor-tabella .riga-nuova {
+    background-color: #f0fff0;
+}
+
+.editor-tabella .riga-modificata {
+    background-color: #fffff0;
+}
+
+/* Dropdown navbar admin */
+.dropdown-menu-dark .dropdown-item:hover {
+    background-color: rgba(197, 164, 78, 0.2);
+}
+
+/* Badge stato */
+.badge {
+    font-size: 0.75rem;
+    text-transform: capitalize;
+}

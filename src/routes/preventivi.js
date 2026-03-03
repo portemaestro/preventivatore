@@ -8,7 +8,7 @@ const router = express.Router();
 // Tutte le route richiedono autenticazione
 router.use(verificaToken);
 
-// GET /api/preventivi — Lista preventivi (filtrata per ruolo)
+// GET /api/preventivi — Lista preventivi (filtrata per ruolo) con paginazione
 router.get('/', async (req, res) => {
     try {
         const filtri = {};
@@ -20,8 +20,35 @@ router.get('/', async (req, res) => {
 
         if (req.query.stato) filtri.stato = req.query.stato;
         if (req.query.agenzia) filtri.agenzia = req.query.agenzia;
-        if (req.query.limite) filtri.limite = parseInt(req.query.limite);
+        if (req.query.cerca) filtri.cerca = req.query.cerca;
+        if (req.query.data_da) filtri.data_da = req.query.data_da;
+        if (req.query.data_a) filtri.data_a = req.query.data_a;
 
+        // Paginazione
+        if (req.query.per_pagina) {
+            filtri.per_pagina = parseInt(req.query.per_pagina) || 20;
+            filtri.pagina = parseInt(req.query.pagina) || 1;
+
+            const [preventivi, totale] = await Promise.all([
+                Preventivo.lista(filtri),
+                Preventivo.contaConFiltri(filtri)
+            ]);
+
+            const totalePagine = Math.ceil(totale / filtri.per_pagina);
+
+            return res.json({
+                dati: preventivi,
+                paginazione: {
+                    pagina: filtri.pagina,
+                    per_pagina: filtri.per_pagina,
+                    totale,
+                    totale_pagine: totalePagine
+                }
+            });
+        }
+
+        // Senza paginazione (retrocompatibilità)
+        if (req.query.limite) filtri.limite = parseInt(req.query.limite);
         const preventivi = await Preventivo.lista(filtri);
         res.json(preventivi);
     } catch (err) {
@@ -165,6 +192,28 @@ router.put('/:id/stato', async (req, res) => {
         res.json(aggiornato);
     } catch (err) {
         console.error('Errore cambio stato:', err);
+        res.status(500).json({ errore: 'Errore interno del server' });
+    }
+});
+
+// DELETE /api/preventivi/:id — Elimina preventivo (solo bozze, solo admin)
+router.delete('/:id', soloAdmin, async (req, res) => {
+    try {
+        const id = parseInt(req.params.id);
+        const preventivo = await Preventivo.trovaPerId(id);
+
+        if (!preventivo) {
+            return res.status(404).json({ errore: 'Preventivo non trovato' });
+        }
+
+        if (preventivo.stato !== 'bozza') {
+            return res.status(400).json({ errore: 'Solo le bozze possono essere eliminate' });
+        }
+
+        await Preventivo.elimina(id);
+        res.json({ messaggio: 'Preventivo eliminato' });
+    } catch (err) {
+        console.error('Errore eliminazione preventivo:', err);
         res.status(500).json({ errore: 'Errore interno del server' });
     }
 });

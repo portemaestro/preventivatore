@@ -7,17 +7,49 @@ const router = express.Router();
 // Tutte le route richiedono autenticazione
 router.use(verificaToken);
 
-// GET /api/rivenditori — Lista rivenditori (solo admin)
+// GET /api/rivenditori — Lista rivenditori (solo admin) con paginazione
 router.get('/', soloAdmin, async (req, res) => {
     try {
         const filtri = {};
         if (req.query.agenzia) filtri.agenzia = req.query.agenzia;
         if (req.query.cerca) filtri.cerca = req.query.cerca;
 
-        const rivenditori = await Rivenditore.lista(filtri);
-        res.json(rivenditori);
+        // Paginazione
+        if (req.query.per_pagina) {
+            filtri.per_pagina = parseInt(req.query.per_pagina) || 20;
+            filtri.pagina = parseInt(req.query.pagina) || 1;
+        }
+
+        const [rivenditori, totale] = await Promise.all([
+            Rivenditore.lista(filtri),
+            Rivenditore.contaConFiltri(filtri)
+        ]);
+
+        const perPagina = filtri.per_pagina || totale;
+        const totalePagine = perPagina > 0 ? Math.ceil(totale / perPagina) : 1;
+
+        res.json({
+            dati: rivenditori,
+            paginazione: {
+                pagina: filtri.pagina || 1,
+                per_pagina: perPagina,
+                totale,
+                totale_pagine: totalePagine
+            }
+        });
     } catch (err) {
         console.error('Errore lista rivenditori:', err);
+        res.status(500).json({ errore: 'Errore interno del server' });
+    }
+});
+
+// GET /api/rivenditori/agenzie — Lista agenzie distinte
+router.get('/agenzie', soloAdmin, async (req, res) => {
+    try {
+        const agenzie = await Rivenditore.listaAgenzie();
+        res.json(agenzie);
+    } catch (err) {
+        console.error('Errore lista agenzie:', err);
         res.status(500).json({ errore: 'Errore interno del server' });
     }
 });
