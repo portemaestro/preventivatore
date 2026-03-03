@@ -111,4 +111,34 @@ router.put('/:id', soloAdmin, async (req, res) => {
     }
 });
 
+// DELETE /api/rivenditori/:id — Elimina rivenditore (solo admin)
+router.delete('/:id', soloAdmin, async (req, res) => {
+    try {
+        const id = parseInt(req.params.id);
+
+        const esistente = await Rivenditore.trovaPerId(id);
+        if (!esistente) {
+            return res.status(404).json({ errore: 'Rivenditore non trovato' });
+        }
+
+        // Verifica che non abbia preventivi associati
+        const { pool } = require('../config/database');
+        const { rows } = await pool.query(
+            'SELECT COUNT(*) as totale FROM preventivi WHERE rivenditore_id = $1',
+            [id]
+        );
+        if (parseInt(rows[0].totale) > 0) {
+            return res.status(400).json({
+                errore: `Impossibile eliminare: il rivenditore ha ${rows[0].totale} preventiv${rows[0].totale === '1' ? 'o' : 'i'} associati`
+            });
+        }
+
+        await Rivenditore.elimina(id);
+        res.json({ messaggio: 'Rivenditore eliminato' });
+    } catch (err) {
+        console.error('Errore eliminazione rivenditore:', err);
+        res.status(500).json({ errore: 'Errore interno del server' });
+    }
+});
+
 module.exports = router;

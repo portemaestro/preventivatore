@@ -2,7 +2,7 @@
 import { api } from '../../api.js';
 import { AGENZIE } from '../../config.js';
 import {
-    creaTabellaAdmin, creaPaginazione, creaBarraRicerca, mostraNotifica
+    creaTabellaAdmin, creaPaginazione, creaBarraRicerca, mostraNotifica, creaModale
 } from './componenti_admin.js';
 import { apriFormRivenditore } from './rivenditore_form.js';
 
@@ -89,6 +89,12 @@ async function caricaDati(container) {
                     classe: 'btn-outline-primary',
                     titolo: 'Modifica',
                     onClick: (id, riga) => apriFormRivenditore(riga, () => caricaDati(container))
+                },
+                {
+                    icona: 'bi-trash',
+                    classe: 'btn-outline-danger',
+                    titolo: 'Elimina',
+                    onClick: (id, riga) => eliminaRivenditore(id, riga, container)
                 }
             ],
             onClickRiga: (id, riga) => apriFormRivenditore(riga, () => caricaDati(container))
@@ -114,4 +120,19 @@ async function caricaDati(container) {
     } catch (err) {
         tabellaEl.innerHTML = `<div class="alert alert-danger m-3">${err.message}</div>`;
     }
+}
+
+function eliminaRivenditore(id, riga, container) {
+    creaModale({
+        titolo: 'Conferma eliminazione',
+        corpo: `<p>Eliminare definitivamente il rivenditore <strong>${riga.ragione_sociale}</strong>?</p>
+                <p class="text-muted small">L'eventuale utente di accesso collegato verrà eliminato. L'operazione non è reversibile.</p>`,
+        testoSalva: 'Elimina',
+        onSalva: async (modale) => {
+            await api.delete(`/rivenditori/${id}`);
+            modale.hide();
+            mostraNotifica('Rivenditore eliminato', 'success');
+            caricaDati(container);
+        }
+    });
 }

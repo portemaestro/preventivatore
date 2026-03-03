@@ -150,6 +150,26 @@ const Rivenditore = {
         return rows[0] || null;
     },
 
+    async elimina(id) {
+        const client = await pool.connect();
+        try {
+            await client.query('BEGIN');
+            // Elimina l'utente collegato (se esiste)
+            await client.query(
+                `DELETE FROM utenti WHERE id IN (SELECT utente_id FROM rivenditori WHERE id = $1 AND utente_id IS NOT NULL)`,
+                [id]
+            );
+            // Elimina il rivenditore
+            await client.query('DELETE FROM rivenditori WHERE id = $1', [id]);
+            await client.query('COMMIT');
+        } catch (err) {
+            await client.query('ROLLBACK');
+            throw err;
+        } finally {
+            client.release();
+        }
+    },
+
     async contaTotale() {
         const { rows } = await pool.query('SELECT COUNT(*) as totale FROM rivenditori');
         return parseInt(rows[0].totale);
