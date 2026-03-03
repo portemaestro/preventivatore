@@ -369,6 +369,141 @@ select.form-select option:disabled {
     background-color: #fffff0;
 }
 
+/* Editor tabellare universale */
+.editor-tabellare-universale input.campo-editor {
+    font-size: 0.8rem;
+    padding: 3px 8px;
+}
+
+.editor-tabellare-universale input.campo-prezzo {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.editor-tabellare-universale .campo-singolo-wrapper {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+    min-width: 150px;
+}
+
+/* Tabella hover righe */
+.table-hover-editor tbody tr:hover {
+    background-color: rgba(26, 58, 92, 0.04);
+}
+
+.table-hover-editor thead th {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--brand-primary);
+    background-color: var(--brand-light);
+}
+
+.table-hover-editor td {
+    padding: 2px 4px;
+    vertical-align: middle;
+}
+
+.table-hover-editor td input {
+    border: 1px solid transparent;
+    background: transparent;
+    transition: border-color 0.15s;
+}
+
+.table-hover-editor td input:focus {
+    border-color: var(--brand-primary);
+    background: #fff;
+}
+
+/* Note/badge informativo */
+.nota-listino {
+    background: #e3f2fd;
+    border-left: 3px solid #1976d2;
+    padding: 6px 10px;
+    border-radius: 0 4px 4px 0;
+    color: #1565c0;
+}
+
+/* Accordion nested - livelli visivi */
+.accordion-nested .accordion-item {
+    border: 1px solid #dee2e6;
+    margin-bottom: 2px;
+    border-radius: 6px !important;
+    overflow: hidden;
+}
+
+.accordion-nested .accordion-button {
+    padding: 8px 14px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.accordion-nested .accordion-body {
+    padding: 10px 14px;
+}
+
+/* Livello 1 */
+.accordion-btn-livello-1 {
+    font-size: 0.85rem;
+    background: rgba(26, 58, 92, 0.03);
+}
+
+.accordion-btn-livello-1:not(.collapsed) {
+    background: rgba(26, 58, 92, 0.08);
+    color: var(--brand-primary);
+    font-weight: 600;
+}
+
+/* Livello 2 */
+.accordion-btn-livello-2 {
+    font-size: 0.82rem;
+    background: rgba(111, 66, 193, 0.03);
+}
+
+.accordion-btn-livello-2:not(.collapsed) {
+    background: rgba(111, 66, 193, 0.08);
+    color: #6f42c1;
+    font-weight: 600;
+}
+
+/* Livello 3+ */
+.accordion-btn-livello-3 {
+    font-size: 0.8rem;
+    background: rgba(25, 135, 84, 0.03);
+}
+
+.accordion-btn-livello-3:not(.collapsed) {
+    background: rgba(25, 135, 84, 0.08);
+    color: #198754;
+    font-weight: 600;
+}
+
+/* Griglia campi */
+.griglia-campi label {
+    font-size: 0.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Tabella editor wrapper */
+.tabella-editor-wrapper {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 8px;
+    background: #fafafa;
+}
+
+/* Preview JSON */
+#preview-json pre {
+    font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+}
+
+/* Lista semplice */
+.lista-semplice .input-group {
+    max-width: 400px;
+}
+
 /* Dropdown navbar admin */
 .dropdown-menu-dark .dropdown-item:hover {
     background-color: rgba(197, 164, 78, 0.2);

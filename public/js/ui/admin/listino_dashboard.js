@@ -117,14 +117,6 @@ function renderGruppi(container) {
 }
 
 async function apriEditor(sezione, container) {
-    // Scegli il tipo di editor in base alla complessità
-    const sezioniTabellari = ['optional', 'maniglioni', 'trasporto_imballo', 'serrature_motorizzate'];
-
-    if (sezioniTabellari.includes(sezione)) {
-        const { apriEditorTabella } = await import('./listino_editor_tabella.js');
-        apriEditorTabella(sezione, datiSezioni.nomi[sezione] || sezione, () => renderListinoDashboard(container));
-    } else {
-        const { apriEditorJSON } = await import('./listino_editor_json.js');
-        apriEditorJSON(sezione, datiSezioni.nomi[sezione] || sezione, () => renderListinoDashboard(container));
-    }
+    const { apriEditorTabella } = await import('./listino_editor_tabella.js');
+    apriEditorTabella(sezione, datiSezioni.nomi[sezione] || sezione, () => renderListinoDashboard(container));
 }
